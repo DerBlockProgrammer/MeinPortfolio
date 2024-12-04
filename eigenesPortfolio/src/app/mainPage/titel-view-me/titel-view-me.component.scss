@@ -1,0 +1,76 @@
+section{
+    background-color: #141D2F;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-direction: row;
+    height:calc(100vh - 202px);
+    
+
+>.photo{
+    height: 60vh;
+    width: 50%;
+    >img{
+        height: 100%;
+        width: 100%;
+    }
+
+}
+>.iam{
+    height: 92%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(-90deg);
+    color: white;
+    width: 87px;
+    font-size: 29px;
+}
+>.name{
+    height: 56%;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-direction: column;
+    font-size: 25px;
+    >.all{
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+
+        >.green {
+            color: white;
+            font-size: 54px;
+        }
+        >.lila{
+            color: #9747FF;
+            font-size: 34px;
+        }
+    }
+    >.scrollDown{
+        height: 30%;
+        width: 42%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: rotate(90deg);
+        margin-left: 70%;
+        font-size: 12px;
+        color: white;
+
+    }
+   
+}
+
+
+
+}
+.buttonDiv{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+margin-top: 20px;
+}
