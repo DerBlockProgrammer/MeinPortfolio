@@ -1,24 +1,27 @@
-section{
+section {
     background-color: #141D2F;
     display: flex;
-    justify-content: center;
-    align-items: end;
-    flex-direction: row;
-    >#links{
-        display: flex;
-        justify-content: center;
-        align-items: end;
-        flex-direction: row;
-        margin-top: 12px;
+    justify-content: start;
+    align-items: center;
+    padding: 20px 1px; 
+}
 
-        >.socialButtons img{
-            height: 10px;
-            width: 10px;
+#links {
+    display: flex;
+    align-items: center; 
+    gap: 32px; 
+    margin-top: 12px;
+}
 
-            >img{
-                
+.buttonsSocial img {
+    height: 30px;
+    width: 30px;
+    cursor: pointer; 
+}
 
-            }
-        }
-    }
+#links h3 {
+    color: white;
+    margin: 0; 
+    font-size: 18px;
+    font-weight: normal;
 }
