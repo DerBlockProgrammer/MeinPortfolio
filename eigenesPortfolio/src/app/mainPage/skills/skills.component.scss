@@ -1,0 +1,80 @@
+.skills-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #141D2F;
+    padding: 50px 100px;
+    color: white;
+    height: auto; // Passt die Höhe automatisch an
+
+    .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); // 4 Spalten
+        gap: 20px; // Abstand zwischen den Items
+        flex: 1;
+
+        .skill {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+
+            img {
+                width: 60px;
+                height: 60px;
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-size: 1rem;
+                color: #ffffff;
+            }
+        }
+    }
+
+    .skills-text {
+    
+        flex: 1;
+        padding-left: 50px;
+
+        h2 {
+            display: flex;
+            justify-content: center;
+            font-size: 70px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.8;
+            margin-bottom: 20px;
+
+            &.highlight {
+                display: flex;
+                justify-content: center;
+                font-weight: bold;
+                color: white;
+
+                span {
+                    color: #9747FF; // Lila Farbe für "another skill"
+                }
+            }
+        }
+
+        button {
+            background-color: #00FF00; // Grüne Farbe
+            color: #141D2F;
+            font-size: 1rem;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+
+            &:hover {
+                background-color: #00cc00; // Etwas dunkler beim Hover
+            }
+        }
+    }
+}
