@@ -22,14 +22,14 @@
 
     .portfolio-grid {
         display: flex;
-        flex-direction: column; // Karten untereinander
-        gap: 30px; // Abstand zwischen den Karten
+        flex-direction: column; 
+        gap: 30px; 
 
         .portfolio-card {
             display: flex;
             align-items: flex-start;
-            gap: 20px; // Abstand zwischen Bild und Text
-            background-color: transparent; // Kein Hintergrund
+            gap: 20px; 
+            background-color: transparent; 
             padding: 20px;
 
             img {
@@ -45,13 +45,13 @@
                 h3 {
                     font-size: 1.5rem;
                     font-weight: bold;
-                    color: #9747FF; // Lila Textfarbe
+                    color: #9747FF; 
                     margin-bottom: 10px;
                 }
 
                 .technologies {
                     font-size: 1rem;
-                    color: #00FF00; // Grüne Farbe
+                    color: #00FF00; 
                     margin-bottom: 10px;
                 }
 
@@ -74,13 +74,13 @@
                         transition: background-color 0.3s;
 
                         &.live-test {
-                            background-color: #9747FF; // Lila Farbe
+                            background-color: #9747FF;
                             color: white;
                         }
 
                         &.github {
                             background-color: transparent;
-                            color: #00FF00; // Grüne Schrift
+                            color: #00FF00; 
                         }
 
                         &:hover {
@@ -91,42 +91,42 @@
             }
         }
 
-        // Spezifisch für die zweite Karte: Bild rechts
+        
         .portfolio-card:nth-child(2) {
-            flex-direction: row-reverse; // Umgekehrte Anordnung
-            text-align: right; // Text rechtsbündig
+            flex-direction: row-reverse; 
+            text-align: right; 
 
             img {
-                margin-right: 0; // Kein Abstand rechts
-                margin-left: 20px; // Abstand links
+                margin-right: 0; 
+                margin-left: 20px; 
             }
         }
     }
 
-    // Für kleinere Geräte: bleibt unverändert
+ 
     @media (max-width: 768px) {
         .portfolio-grid {
-            gap: 20px; // Weniger Abstand bei kleinen Bildschirmen
+            gap: 20px; 
         }
 
         .portfolio-card {
-            flex-direction: column; // Bild und Text untereinander
+            flex-direction: column; 
             text-align: center;
 
             img {
-                margin: 0 auto 20px; // Zentriert das Bild
+                margin: 0 auto 20px; 
             }
 
             .portfolio-details {
-                align-items: center; // Zentriert den Text
+                align-items: center; 
             }
 
-            // Entferne spezifische Anordnung für Mobile
+            
             .portfolio-card:nth-child(2) {
-                flex-direction: column; // Bild und Text untereinander
+                flex-direction: column; 
                 text-align: center;
                 img {
-                    margin-left: 0; // Kein linker Abstand
+                    margin-left: 0; 
                 }
             }
         }
