@@ -1,0 +1,134 @@
+.portfolio-section {
+    background-color: #141D2F;
+    padding: 50px 100px;
+    color: white;
+
+    .portfolio-header {
+        text-align: center;
+        margin-bottom: 50px;
+
+        h2 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #cfd1d4;
+        }
+    }
+
+    .portfolio-grid {
+        display: flex;
+        flex-direction: column; // Karten untereinander
+        gap: 30px; // Abstand zwischen den Karten
+
+        .portfolio-card {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px; // Abstand zwischen Bild und Text
+            background-color: transparent; // Kein Hintergrund
+            padding: 20px;
+
+            img {
+                width: 200px;
+                height: auto;
+                border-radius: 5px;
+            }
+
+            .portfolio-details {
+                display: flex;
+                flex-direction: column;
+
+                h3 {
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                    color: #9747FF; // Lila Textfarbe
+                    margin-bottom: 10px;
+                }
+
+                .technologies {
+                    font-size: 1rem;
+                    color: #00FF00; // Grüne Farbe
+                    margin-bottom: 10px;
+                }
+
+                .description {
+                    font-size: 1rem;
+                    line-height: 1.5;
+                    color: #cfd1d4;
+                    margin-bottom: 20px;
+                }
+
+                .buttons {
+                    display: flex;
+                    gap: 10px;
+
+                    .btn {
+                        text-decoration: none;
+                        font-size: 1rem;
+                        padding: 10px 20px;
+                        border-radius: 5px;
+                        transition: background-color 0.3s;
+
+                        &.live-test {
+                            background-color: #9747FF; // Lila Farbe
+                            color: white;
+                        }
+
+                        &.github {
+                            background-color: transparent;
+                            color: #00FF00; // Grüne Schrift
+                        }
+
+                        &:hover {
+                            filter: brightness(0.9);
+                        }
+                    }
+                }
+            }
+        }
+
+        // Spezifisch für die zweite Karte: Bild rechts
+        .portfolio-card:nth-child(2) {
+            flex-direction: row-reverse; // Umgekehrte Anordnung
+            text-align: right; // Text rechtsbündig
+
+            img {
+                margin-right: 0; // Kein Abstand rechts
+                margin-left: 20px; // Abstand links
+            }
+        }
+    }
+
+    // Für kleinere Geräte: bleibt unverändert
+    @media (max-width: 768px) {
+        .portfolio-grid {
+            gap: 20px; // Weniger Abstand bei kleinen Bildschirmen
+        }
+
+        .portfolio-card {
+            flex-direction: column; // Bild und Text untereinander
+            text-align: center;
+
+            img {
+                margin: 0 auto 20px; // Zentriert das Bild
+            }
+
+            .portfolio-details {
+                align-items: center; // Zentriert den Text
+            }
+
+            // Entferne spezifische Anordnung für Mobile
+            .portfolio-card:nth-child(2) {
+                flex-direction: column; // Bild und Text untereinander
+                text-align: center;
+                img {
+                    margin-left: 0; // Kein linker Abstand
+                }
+            }
+        }
+    }
+}

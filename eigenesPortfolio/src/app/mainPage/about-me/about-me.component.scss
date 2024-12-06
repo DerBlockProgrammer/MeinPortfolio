@@ -55,7 +55,6 @@
     }
 
     .profile {
-        flex: 1;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -77,7 +76,7 @@
             background-color: #00FF00;
             top: 50%;
             transform: translateY(-50%);
-            left: 68%;
+           right: -310px;
         }
     }
     .lila{
