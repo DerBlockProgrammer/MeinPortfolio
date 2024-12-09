@@ -4,10 +4,11 @@ import { GithubLinksComponent } from "./github-links/github-links.component";
 import { AboutMeComponent } from "./about-me/about-me.component";
 import { SkillsComponent } from "./skills/skills.component";
 import { PortfolioComponent } from "./portfolio/portfolio.component";
+import { RezessionComponent } from "./rezession/rezession.component";
 
 @Component({
   selector: 'app-main',
-  imports: [TitelViewMeComponent, GithubLinksComponent, AboutMeComponent, SkillsComponent, PortfolioComponent],
+  imports: [TitelViewMeComponent, GithubLinksComponent, AboutMeComponent, SkillsComponent, PortfolioComponent, RezessionComponent],
   templateUrl: './mainPage.component.html',
   styleUrl: './mainPage.component.scss'
 })
