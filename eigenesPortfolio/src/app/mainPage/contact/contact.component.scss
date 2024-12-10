@@ -1,0 +1,132 @@
+$primary-color: #9747ff;
+$background-color: #141d2f;
+$text-color: white;
+$button-hover-color: #76448a;
+$checkbox-link-color: #9b59b6;
+
+.contactDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $background-color;
+    padding: 50px;
+    color: $text-color;
+    height: 25vh;
+
+    .contact {
+        display: flex;
+        gap: 50px; 
+        max-width: 1200px;
+        width: 100%;
+        flex-wrap: wrap;
+
+        .text {
+            flex: 1;
+            max-width: 500px;
+
+            span {
+                font-size: 24px;
+                font-weight: bold;
+                display: block;
+                margin-bottom: 20px;
+            }
+
+            p {
+                margin: 10px 0;
+                line-height: 1.6;
+            }
+        }
+
+        .formular {
+            flex: 1;
+            max-width: 500px;
+            position: relative; 
+
+            form {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                input,
+                textarea {
+                    padding: 10px;
+                    border: 1px solid $primary-color;
+                    border-radius: 5px;
+                    background-color: $background-color;
+                    color: $text-color;
+                    font-size: 16px;
+
+                    &:focus {
+                        outline: none;
+                        border-color: $primary-color;
+                    }
+                }
+
+                textarea {
+                    height: 120px;
+                    resize: none;
+                }
+
+                .checkbox {
+                    display: flex;
+                    align-items: flex-start; 
+                    gap: 10px; 
+                    font-size: 14px;
+                    line-height: 1.4; 
+
+                    input {
+                        margin: 0; 
+                        align-self: center; 
+                    }
+
+                    label {
+                        margin: 0;
+
+                        a {
+                            color: $checkbox-link-color;
+                            text-decoration: none;
+                        }
+                    }
+                }
+
+                button {
+                    padding: 10px 20px;
+                    border: none;
+                    background-color: #B6B6B6;
+                    color: $text-color;
+                    font-size: 16px;
+                    cursor: pointer;
+                    border-radius: 5px;
+                    transition: background-color 0.3s;
+
+                    &:hover {
+                        background-color: $button-hover-color;
+                    }
+                }
+            }
+
+            .arrow {
+                position: absolute; 
+                bottom: -60px; 
+                right: 10px; 
+                z-index: 10; 
+
+                img {
+                    width: 25px; 
+                    height: auto; 
+                    cursor: pointer; 
+                    transition: transform 0.3s ease; 
+
+                    &:hover {
+                        transform: scale(1.1); 
+                    }
+                }
+            }
+        }
+    }
+    .purple{
+      position: absolute;
+        background-size: cover;
+
+    }
+}

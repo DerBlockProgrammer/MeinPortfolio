@@ -1,0 +1,32 @@
+.contactLine {
+    height: 60vh;
+    background-color: #141d2f;
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;    
+}
+
+.line {
+    display: flex;
+    align-items: center;   
+
+}
+
+.img {
+    display: flex;
+    align-items: center;
+    margin-right: 30px; 
+    height: 2px; 
+}
+
+.img img {
+    width: 60vh; 
+    height: 100%; 
+}
+
+h1 {
+    margin: 0;
+    font-size: 90px; 
+    color: white;
+}
+
