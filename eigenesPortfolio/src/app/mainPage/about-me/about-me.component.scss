@@ -2,28 +2,34 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #141D2F; 
-    padding: 50px 100px; 
+    background-color: #141D2F;
+    padding: 50px 100px;
     color: white;
-    height: 61vh; 
+    height: 61vh;
     overflow: hidden;
 
     .text-content {
-        flex: 1; 
+        flex: 1;
         max-width: 50%;
         position: relative;
-        z-index: 1; 
+        z-index: 1;
+        margin-left: 10vh;
+
+       
 
         h1 {
-            font-size: 3rem;
-            font-weight: bold;
+            font-size: 90px;
+            font-weight: 700;
             margin-bottom: 20px;
+            
+
         }
 
         p {
-            font-size: 1.2rem;
+            font-size: 16px;
             line-height: 1.8;
             margin-bottom: 20px;
+            font-weight: 400;
         }
 
         .features {
@@ -39,6 +45,7 @@
                 .icon {
                     height: 40px;
                     width: 40px;
+
                     img {
                         width: 100%;
                         height: auto;
@@ -76,18 +83,18 @@
             background-color: #00FF00;
             top: 50%;
             transform: translateY(-50%);
-           right: -310px;
+            right: -310px;
         }
     }
-    .lila{
-        position: absolute;
-        left: 170vh;
-        top: -60%;
 
-        >img{
-            height: 50vh;
-            object-fit: cover;
-           
-        }
+    .lila {
+        position: absolute;
+        top: -4%;
+        right: -150vh;
+
+        height: 300px;
+        transform: translateY(-50%);
+        opacity: 0.7;
+        z-index: -1;
     }
 }

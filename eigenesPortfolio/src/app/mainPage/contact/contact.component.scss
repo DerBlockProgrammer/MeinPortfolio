@@ -12,16 +12,16 @@ $checkbox-link-color: #9b59b6;
     padding: 50px;
     color: $text-color;
     height: 52vh;
-    
+
 
     .contact {
-        display: flex
-        ;
-            gap: 50px;
-            max-width: 1200px;
-            width: 100%;
-            flex-wrap: wrap;
-            height: 377px;
+        display: flex;
+        gap: 50px;
+        max-width: 1200px;
+        width: 100%;
+        flex-wrap: wrap;
+        height: 377px;
+        z-index: 2;
 
         .text {
             flex: 1;
@@ -128,9 +128,17 @@ $checkbox-link-color: #9b59b6;
         }
     }
 
-    // .purple{
-    //   position: absolute;
-    //     background-size: cover;
+    .purple {
+        position: absolute; // Positioniert das Bild relativ zu .contactDiv
+        left: 0; // Am linken Rand des Containers
 
-    // }
+        height: 63vh; // Höhe des Bildes (anpassen nach Bedarf)
+
+        >img {
+            height: 100%;
+            width: 53vh;
+        }
+
+
+    }
 }

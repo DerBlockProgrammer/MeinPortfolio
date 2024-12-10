@@ -3,107 +3,100 @@ section {
     background-color: #141D2F;
     display: flex;
     justify-content: center;
-    align-items: end;
+    align-items: flex-end;
     flex-direction: row;
     height: calc(100vh - 202px);
     overflow: hidden;
+    z-index: 2;
 
-
-    &::before {
-        content: ""; 
+    .background-green {
         position: absolute;
-        top: 0;
-        left: 81px;
-        width: 47%; 
-        height: 100%; 
-        background-image: url('/background/photoshadows.png') ;
+        top: 213px;
+        left: 200px;
+        width: 57%;
+        height: 100%;
+      
         background-size: cover;
-        z-index: 1;
+        background-repeat: no-repeat;
+        z-index: -1;
     }
 
-    &::after {
-        content: ""; 
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 203vh; 
-        height:85%;
-        background-image: url('/background/HeroBackground.png');
-        background-size: cover;
-        z-index: 2; 
-  
-    }
-         
-        
+   
 
-
-    >.photo {
+    .photo {
         height: 60vh;
         width: 50%;
-        z-index: 2;
+        z-index: 3;
 
-        >img {
+        img {
             height: 100%;
             width: 95%;
         }
-
     }
 
-    >.iam {
-        height: 92%;
+    .iam {
+        height: 94%;
         display: flex;
         justify-content: center;
         align-items: center;
         transform: rotate(-90deg);
         color: white;
-        width: 87px;
         font-size: 29px;
+>h2{
+    font-weight: 400;
+}
+
     }
 
-    >.name {
+    .name {
         height: 56%;
         width: 40%;
         display: flex;
         justify-content: space-between;
-        align-items: start;
+        align-items: flex-start;
         flex-direction: column;
         font-size: 25px;
 
-        >.all {
+        .all {
             display: flex;
             justify-content: center;
-            align-items: start;
+            align-items: flex-start;
             flex-direction: column;
 
-            >.green {
+            .green {
                 color: white;
                 font-size: 54px;
+                font-weight: 700;
             }
 
-            >.lila {
+            .lila {
                 color: #9747FF;
                 font-size: 34px;
+                
+                >p{
+                    font-weight: 400;
+                }
+            
             }
         }
 
-        >.scrollDown {
-            height: 30%;
+        .scrollDown {
+            height: 47%;
             width: 42%;
             display: flex;
             justify-content: center;
             align-items: center;
             transform: rotate(90deg);
             margin-left: 70%;
-            font-size: 20px;
+            font-size: 15px;
             color: white;
-            z-index: 3; 
-
+            z-index: 3;
+            >h3{
+                font-weight: 400;
+            }
+         
         }
-
     }
-
-
-
 }
 
 .buttonDiv {
