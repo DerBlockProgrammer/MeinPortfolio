@@ -1,47 +1,65 @@
-footer {
+.footer {
+    background-color: #141d2f;
+    color: white;
+    padding: 40px 50px;
     display: flex;
-    background-color: #141D2F;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100px;
+    justify-content: center;
+    height: 123px;
 
-
-
-    >#over {
+    .footer-content {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        flex-direction: row;
-        width: calc(100% - 200px);
+        max-width: 1200px;
+        width: 100%;
 
-
-        >h1 {
-            font-size: 20px;
-            color: white;
-        }
-
-        >#navbar {
+        .footer-logo {
             display: flex;
-            justify-content: space-around;
-            align-items: center;
-            flex-direction: row;
-            gap: 29px;
+            flex-direction: column;
 
-            >#links {
-                display: flex;
-                align-items: center;
+            h1 {
+                font-size: 24px;
+                font-weight: bold;
+
+                span {
+                    color: #7dff63; // Grüne Farbe für "K"
+                }
+            }
+
+            p {
+                margin: 5px 0 0;
+                font-size: 12px;
+                color: #b6b6b6;
             }
         }
 
-        >img {
-            display: flex;
-            align-items: center;
-            height: 100%;
-            width: 100%;
+        .footer-copyright {
+            font-size: 14px;
+            text-align: center;
+            color: #b6b6b6;
         }
 
+        .footer-icons {
+            display: flex;
+            gap: 15px;
+            padding-right: 127px;
 
+            a {
+                display: inline-block;
+                width: 24px;
+                height: 24px;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                    filter: invert(100%); // Weißer Icon-Effekt
+                    transition: transform 0.3s ease;
+
+                    &:hover {
+                        transform: scale(1.2); // Vergrößerung bei Hover
+                    }
+                }
+            }
+        }
     }
-
 }

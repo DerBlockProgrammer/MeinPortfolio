@@ -8,17 +8,20 @@ $checkbox-link-color: #9b59b6;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: $background-color;
+    background-color: #141d2f;
     padding: 50px;
     color: $text-color;
-    height: 25vh;
+    height: 52vh;
+    
 
     .contact {
-        display: flex;
-        gap: 50px; 
-        max-width: 1200px;
-        width: 100%;
-        flex-wrap: wrap;
+        display: flex
+        ;
+            gap: 50px;
+            max-width: 1200px;
+            width: 100%;
+            flex-wrap: wrap;
+            height: 377px;
 
         .text {
             flex: 1;
@@ -40,7 +43,7 @@ $checkbox-link-color: #9b59b6;
         .formular {
             flex: 1;
             max-width: 500px;
-            position: relative; 
+            position: relative;
 
             form {
                 display: flex;
@@ -69,14 +72,14 @@ $checkbox-link-color: #9b59b6;
 
                 .checkbox {
                     display: flex;
-                    align-items: flex-start; 
-                    gap: 10px; 
+                    align-items: flex-start;
+                    gap: 10px;
                     font-size: 14px;
-                    line-height: 1.4; 
+                    line-height: 1.4;
 
                     input {
-                        margin: 0; 
-                        align-self: center; 
+                        margin: 0;
+                        align-self: center;
                     }
 
                     label {
@@ -106,27 +109,28 @@ $checkbox-link-color: #9b59b6;
             }
 
             .arrow {
-                position: absolute; 
-                bottom: -60px; 
-                right: 10px; 
-                z-index: 10; 
+                position: absolute;
+                bottom: -60px;
+                right: 10px;
+                z-index: 10;
 
                 img {
-                    width: 25px; 
-                    height: auto; 
-                    cursor: pointer; 
-                    transition: transform 0.3s ease; 
+                    width: 25px;
+                    height: auto;
+                    cursor: pointer;
+                    transition: transform 0.3s ease;
 
                     &:hover {
-                        transform: scale(1.1); 
+                        transform: scale(1.1);
                     }
                 }
             }
         }
     }
-    .purple{
-      position: absolute;
-        background-size: cover;
 
-    }
+    // .purple{
+    //   position: absolute;
+    //     background-size: cover;
+
+    // }
 }
