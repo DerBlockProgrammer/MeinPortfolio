@@ -1,8 +1,7 @@
 section {
     position: relative;
     background-color: #141D2F;
-    display: flex
-;
+    display: flex;
     justify-content: center;
     align-items: flex-end;
     flex-direction: row;
@@ -16,14 +15,13 @@ section {
         left: 200px;
         width: 57%;
         height: 100%;
-      
+
         background-size: cover;
         background-repeat: no-repeat;
-        z-index: 20
-        ;
+        z-index: 20;
     }
 
-   
+
 
     .photo {
         height: 60vh;
@@ -37,23 +35,23 @@ section {
     }
 
     .iam {
-        height: 94%;
+        height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         transform: rotate(-90deg);
         color: white;
-        font-size: 29px;
-        z-index: 40
-        ;
->h2{
-    font-weight: 400;
-}
+        font-size: 64px;
+        z-index: 40;
+
+        >h2 {
+            font-weight: 400;
+        }
 
     }
 
     .name {
-        height: 56%;
+        height: 77%;
         width: 40%;
         display: flex;
         justify-content: space-between;
@@ -72,16 +70,17 @@ section {
                 color: white;
                 font-size: 54px;
                 font-weight: 700;
+                font-size: 90px;
             }
 
             .lila {
                 color: #9747FF;
-                font-size: 34px;
-                
-                >p{
+                font-size: 58px;
+
+                >p {
                     font-weight: 400;
                 }
-            
+
             }
         }
 
@@ -96,10 +95,11 @@ section {
             font-size: 15px;
             color: white;
             z-index: 40;
-            >h3{
+
+            >h3 {
                 font-weight: 400;
             }
-         
+
         }
     }
 }
@@ -110,4 +110,29 @@ section {
     align-items: center;
     width: 100%;
     margin-top: 20px;
+
+    button {
+        background-color: #70e61c; /* Grüne Farbe */
+        color: white; /* Weiße Schrift */
+        font-size: 23px; /* Schriftgröße */
+        font-weight: 600; /* Schriftgewicht */
+        padding: 12px 30px; /* Innenabstand (oben/unten, rechts/links) */
+        border: none; /* Kein Rand */
+        border-radius: 15px; /* Abgerundete Ecken */
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Schatteneffekt */
+        cursor: pointer; /* Mauszeiger ändert sich zu Hand */
+        transition: all 0.3s ease; /* Animation bei Hover */
+        font-weight: 400;
+    }
+
+    button:hover {
+        background-color: #5fc119; /* Etwas dunkleres Grün beim Hover */
+        box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.3); /* Stärkerer Schatten beim Hover */
+        transform: translateY(-2px); /* Leichtes Heben beim Hover */
+    }
+
+    button:active {
+        transform: translateY(2px); /* Button wird bei Klick leicht nach unten gedrückt */
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Schwächerer Schatten bei Klick */
+    }
 }

@@ -5,13 +5,13 @@
     background-color: #141D2F;
     padding: 50px 100px;
     color: white;
-    height: auto; // Passt die Höhe automatisch an
-    margin-top: 71vh;
+    height: auto;
+    margin-top: 98vh;
 
     .skills-grid {
         display: grid;
-        grid-template-columns: repeat(4, 1fr); // 4 Spalten
-        gap: 20px; // Abstand zwischen den Items
+        grid-template-columns: repeat(4, 1fr); /* 4 Spalten */
+        gap: 20px; /* Abstand zwischen den Items */
         flex: 1;
 
         .skill {
@@ -21,14 +21,9 @@
             text-align: center;
 
             img {
-                width: 60px;
-                height: 60px;
+                width: 80px;
+                height: auto;
                 margin-bottom: 10px;
-            }
-
-            p {
-                font-size: 1rem;
-                color: #ffffff;
             }
         }
     }
@@ -48,40 +43,45 @@
             font-size: 16px;
             line-height: 1.8;
             margin-bottom: 20px;
-            display: flex;
-            justify-content: end;
 
             &.highlight {
-                display: flex;
-                justify-content: center;
                 font-weight: bold;
-                color: white;
-                display: flex;
-                justify-content: end;
                 font-size: 32px;
+                text-align: right;
 
                 span {
-                    color: #9747FF; // Lila Farbe für "another skill"
-
-
+                    color: #9747FF; /* Lila Farbe für "another skill" */
                 }
             }
         }
 
         .button {
-            background-color: #00FF00; // Grüne Farbe
-            color: #141D2F;
-            font-size: 1rem;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s;
             display: flex;
-            justify-content: center;
+            justify-content: flex-end; /* Button rechtsbündig */
+            margin-top: 30px;
 
-            &:hover {
-                background-color: #00cc00; // Etwas dunkler beim Hover
+            button {
+                background-color: #70e61c; /* Grüne Farbe */
+                color: white; /* Weiße Schrift */
+                font-size: 18px; /* Schriftgröße */
+                font-weight: 600; /* Schriftgewicht */
+                padding: 15px 40px; /* Innenabstand (oben/unten, rechts/links) */
+                border: none; /* Kein Rand */
+                border-radius: 25px; /* Abgerundete Ecken */
+                box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Schatteneffekt */
+                cursor: pointer; /* Mauszeiger ändert sich zu Hand */
+                transition: all 0.3s ease; /* Animation bei Hover */
+            }
+
+            button:hover {
+                background-color: #5fc119; /* Etwas dunkleres Grün beim Hover */
+                box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.3); /* Stärkerer Schatten beim Hover */
+                transform: translateY(-2px); /* Leichtes Heben beim Hover */
+            }
+
+            button:active {
+                transform: translateY(2px); /* Button wird bei Klick leicht nach unten gedrückt */
+                box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Schwächerer Schatten bei Klick */
             }
         }
     }

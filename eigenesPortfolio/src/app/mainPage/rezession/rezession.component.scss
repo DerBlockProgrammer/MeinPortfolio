@@ -1,17 +1,29 @@
+/* Grundlegendes Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #141D2F;
+    color: white;
+}
+
+/* Testimonial Section */
 .testimonial-section {
     background-color: #141D2F; // Hintergrundfarbe
-    padding: 50px; // Abstand oben und unten
+    padding: 50px;
     color: white;
 
     .testimonial-container {
-        display: flex;
-        justify-content: space-between; // Verteilt Zitat und Profilbild gleichmäßig
-        align-items: center;
-        gap: 65px; // Abstand zwischen den beiden Containern
-        padding: 36px 366px;
+        display: flex
+;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 61px 0px;
+    margin-top: 69px;
 
         .quote-box {
-            flex: 1; // Nimmt den verbleibenden Platz ein
+            flex: 1; // Nimmt verfügbaren Platz ein
+            max-width: 600px; // Maximale Breite
             border: 2px solid #70e61c; // Grüne Rahmenfarbe
             border-radius: 15px;
             padding: 30px;
@@ -22,7 +34,7 @@
                 top: -20px;
                 left: -20px;
                 font-size: 3rem;
-                color: #9747FF; // Lila Farbe
+                color: #9747FF;
                 font-weight: bold;
             }
 
@@ -43,48 +55,36 @@
                     color: #ffffff;
                     font-weight: bold;
                 }
-
-                &:before {
-                    content: "";
-                    display: block;
-                    width: 60px;
-                    height: 2px;
-                    background-color: #9747FF;
-                    margin: 10px auto;
-                }
             }
         }
 
-        .profile-box {
-            border: 5px solid #9747FF;
-            border-radius: 50%;
-            width: 200px;
-            height: 200px;
-            object-fit: cover;
+        .profile-box-container {
+            display: flex; // Legt den Kreis und den Strich nebeneinander
+            align-items: center; // Vertikale Ausrichtung
+            gap: 10px; // Abstand zwischen Kreis und Strich
 
-            // // Profilbild
-            // .profile-picture {
-            //     width: 150px;
-            //     height: 150px;
-            //     border-radius: 50%;
-            //     border: 5px solid #00FF00; // Grüner Rand
-            //     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-            // }
+            .profile-box {
+                position: relative; // Ermöglicht absolute Positionierung der Kinder
+                width: 200px;
+                height: 200px;
+                border: 5px solid #9747FF; // Grüner Rand
+                border-radius: 50%; // Kreisform
+                display: flex;
+                justify-content: center;
+                align-items: center;
 
-       
-             .purple-line {
-                position: absolute;
-    width: 418px;
-    height: 3px;
-    background-color: #9747FF; // Grüne Farbe für den Strich
-    transform: translateY(-50%);
-    margin-top: 77px; // Position nach unten
-    margin-left: 203px;
-           
-               
+                .profile-picture {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+            }
+
+            .purple-line {
+                width: 100px; // Breite des Strich-Bildes
+                height: 3px; // Höhe des Strich-Bildes
             }
         }
     }
-    
 }
-
