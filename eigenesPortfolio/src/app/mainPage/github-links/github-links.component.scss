@@ -1,9 +1,12 @@
 section {
     background-color: #141D2F;
-    display: flex;
+    display: flex
+;
     justify-content: start;
     align-items: center;
-    padding: 20px 1px; 
+    padding: -1px 49px;
+    z-index: 40;
+    position: absolute;
 }
 
 #links {

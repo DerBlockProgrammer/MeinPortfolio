@@ -1,12 +1,14 @@
 .about-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #141D2F;
-    padding: 50px 100px;
-    color: white;
-    height: 61vh;
-    overflow: hidden;
+    display: flex
+    ;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #141D2F;
+        padding: 50px 100px;
+        color: white;
+        height: 61vh;
+        overflow: hidden;
+        position: absolute;
 
     .text-content {
         flex: 1;
