@@ -70,12 +70,12 @@ section {
                 color: white;
                 font-size: 54px;
                 font-weight: 700;
-                font-size: 90px;
+                font-size: 54px;
             }
 
             .lila {
                 color: #9747FF;
-                font-size: 58px;
+                font-size: 45px;
 
                 >p {
                     font-weight: 400;
@@ -134,5 +134,49 @@ section {
     button:active {
         transform: translateY(2px); /* Button wird bei Klick leicht nach unten gedrückt */
         box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Schwächerer Schatten bei Klick */
+    }
+}
+@media (max-width: 768px) {
+    section {
+        flex-direction: column; /* Vertikale Anordnung der Elemente */
+        height: auto; /* Automatische Höhe, damit alles korrekt passt */
+    }
+
+    .photo {
+        height: 40vh; /* Kleinere Höhe für das Bild */
+        width: 100%; /* Volle Breite */
+        display: flex;
+        justify-content: center;
+
+        img {
+            width: 80%; /* Proportionale Breite für das Bild */
+            height: auto; /* Höhe passt sich an */
+        }
+    }
+
+    .iam {
+        display: none; /* Verstecke den rotierenden Text "I am" */
+    }
+
+    .name {
+        width: 90%; /* Passe den Textbereich an die Bildschirmbreite an */
+        margin: 0 auto; /* Zentriere den Text */
+        text-align: center; /* Zentriere den Text-Inhalt */
+        
+        .all .green {
+            font-size: 36px; /* Reduzierte Schriftgröße */
+        }
+
+        .all .lila {
+            font-size: 30px; /* Reduzierte Schriftgröße */
+        }
+    }
+
+    .buttonDiv {
+        margin-top: 20px;
+        button {
+            font-size: 18px; /* Kleinere Schriftgröße für den Button */
+            padding: 10px 20px; /* Reduziere die Innenabstände */
+        }
     }
 }

@@ -5,8 +5,7 @@ $button-hover-color: #76448a;
 $checkbox-link-color: #9b59b6;
 
 .contactDiv {
-    display: flex
-;
+    display: flex;
     justify-content: center;
     align-items: center;
     background-color: #141d2f;
@@ -14,14 +13,13 @@ $checkbox-link-color: #9b59b6;
     color: white;
     height: 66vh;
 
-
     .contact {
         display: flex;
-        gap: 50px;
+        gap: 160px;
         max-width: 1200px;
         width: 100%;
         flex-wrap: wrap;
-        height: 377px;
+        height: auto;
         z-index: 2;
 
         .text {
@@ -29,7 +27,7 @@ $checkbox-link-color: #9b59b6;
             max-width: 500px;
 
             span {
-                font-size: 24px;
+                font-size: 32px;
                 font-weight: bold;
                 display: block;
                 margin-bottom: 20px;
@@ -39,6 +37,7 @@ $checkbox-link-color: #9b59b6;
                 margin: 10px 0;
                 line-height: 1.6;
                 font-size: 16px;
+                font-weight: 400;
             }
         }
 
@@ -68,7 +67,7 @@ $checkbox-link-color: #9b59b6;
                 }
 
                 textarea {
-                    height: 120px;
+                    height: 193px;
                     resize: none;
                 }
 
@@ -82,6 +81,7 @@ $checkbox-link-color: #9b59b6;
                     input {
                         margin: 0;
                         align-self: center;
+                       
                     }
 
                     label {
@@ -94,20 +94,33 @@ $checkbox-link-color: #9b59b6;
                     }
                 }
 
+          
                 button {
-                    padding: 10px 20px;
+                    display: block; /* Stellt sicher, dass der Button wie ein Blockelement behandelt wird */
+                    margin: 20px auto; /* Zentriert den Button horizontal */
+                    padding: 10px 30px; /* Kleinere Innenabstände für einen schmaleren Button */
+                    width: fit-content; /* Passt die Breite an den Textinhalt an */
                     border: none;
-                    background-color: #B6B6B6;
-                    color: $text-color;
-                    font-size: 16px;
+                    background-color: #b6b6b6; /* Hellgrau wie im Zielbild */
+                    color: $text-color; /* Weißer Text */
+                    font-size: 16px; /* Schriftgröße */
+                    font-weight: 500;
                     cursor: pointer;
-                    border-radius: 5px;
-                    transition: background-color 0.3s;
-
+                    border-radius: 9px; /* Abgerundete Ecken */
+                    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); /* Schatteneffekt */
+                    transition: all 0.3s ease;
+                    font-weight: 400;
+                
                     &:hover {
-                        background-color: $button-hover-color;
+                        background-color: $button-hover-color; /* Dunklerer Farbton beim Hover */
+                    }
+                
+                    &:active {
+                        transform: translateY(1px); /* Leichtes Drücken beim Klicken */
+                        box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2); /* Schwächerer Schatten */
                     }
                 }
+                
             }
 
             .arrow {
@@ -131,16 +144,13 @@ $checkbox-link-color: #9b59b6;
     }
 
     .purple {
-        position: absolute; // Positioniert das Bild relativ zu .contactDiv
-        left: 0; // Am linken Rand des Containers
+        position: absolute; 
+        left: 0; 
+        height: 63vh; 
 
-        height: 63vh; // Höhe des Bildes (anpassen nach Bedarf)
-
-        >img {
+        > img {
             height: 100%;
             width: 53vh;
         }
-
-
     }
 }
