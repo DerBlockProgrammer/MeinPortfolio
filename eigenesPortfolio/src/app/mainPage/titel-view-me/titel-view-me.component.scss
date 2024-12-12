@@ -3,180 +3,183 @@ section {
     background-color: #141D2F;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
-    flex-direction: row;
+    align-items: center;
     height: calc(100vh - 202px);
     overflow: hidden;
     z-index: 1;
 
     .background-green {
         position: absolute;
-        // top: 213px;
         left: 200px;
         width: 57%;
         height: 100%;
-
         background-size: cover;
         background-repeat: no-repeat;
         z-index: 20;
     }
 
-
+    .content-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        max-width: 1200px;
+        height: 100%;
+        padding: 0 40px;
+    }
 
     .photo {
+        flex: 1;
         height: 60vh;
-        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         z-index: 30;
 
         img {
             height: 100%;
-            width: 95%;
+            width: auto;
         }
     }
 
-    .iam {
-        height: 100%;
+    .text-wrapper {
+        flex: 1;
         display: flex;
-        justify-content: center;
-        align-items: center;
-        transform: rotate(-90deg);
-        color: white;
-        font-size: 64px;
-        z-index: 40;
-
-        >h2 {
-            font-weight: 400;
-        }
-
-    }
-
-    .name {
-        height: 77%;
-        width: 40%;
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
         flex-direction: column;
-        font-size: 25px;
-        z-index: 40;
+        justify-content: center;
+        align-items: flex-start;
+        height: 100%;
+        position: relative;
 
-        .all {
+        .iam-and-name {
             display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            flex-direction: column;
+            align-items: flex-start; /* Horizontale Ausrichtung oben */
+            gap: 20px; /* Abstand zwischen "I am" und Name */
 
-            .green {
+            .iam {
+                transform: rotate(-90deg); /* Vertikal drehen */
+                font-size: 64px;
                 color: white;
-                font-size: 54px;
-                font-weight: 700;
-                font-size: 54px;
+                line-height: 1; /* Geringer Zeilenabstand */
+
+                h2 {
+                    font-weight: 400;
+                    text-align: right;
+                }
             }
 
-            .lila {
-                color: #9747FF;
-                font-size: 45px;
+            .name {
+                .all {
+                    display: flex;
+                    flex-direction: column;
 
-                >p {
-                    font-weight: 400;
+                    .green {
+                        color: white;
+                        font-size: 54px;
+                        font-weight: 700;
+                    }
+
+                    .lila {
+                        color: #9747FF;
+                        font-size: 45px;
+
+                        > p {
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+        }
+
+        .buttonDiv {
+            margin-top: 20px;
+
+            button {
+                background-color: #70e61c;
+                color: white;
+                font-size: 23px;
+                font-weight: 600;
+                padding: 12px 30px;
+                border: none;
+                border-radius: 15px;
+                box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+                cursor: pointer;
+                transition: all 0.3s ease;
+            }
+
+            button:hover {
+                background-color: #5fc119;
+                box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.3);
+                transform: translateY(-2px);
+            }
+
+            button:active {
+                transform: translateY(2px);
+                box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+            }
+        }
+    }
+}
+
+@media (max-width: 965px) {
+    section {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        height: auto;
+        padding: 20px;
+
+        .content-wrapper {
+            flex-direction: column;
+            align-items: center;
+            padding: 0;
+        }
+
+        .photo {
+            width: 100%;
+            height: auto;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .text-wrapper {
+            width: 100%;
+            align-items: center;
+            text-align: center;
+
+            .iam-and-name {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+
+                .iam {
+                    transform: none;
+                    font-size: 32px;
+                    text-align: center;
                 }
 
-            }
-        }
+                .name .all {
+                    .green {
+                        font-size: 36px;
+                    }
 
-        .scrollDown {
-            height: 47%;
-            width: 42%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            transform: rotate(90deg);
-            margin-left: 70%;
-            font-size: 15px;
-            color: white;
-            z-index: 40;
-
-            >h3 {
-                font-weight: 400;
+                    .lila {
+                        font-size: 28px;
+                    }
+                }
             }
 
-        }
-    }
-}
+            .buttonDiv {
+                margin-top: 20px;
 
-.buttonDiv {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin-top: 20px;
-
-    button {
-        background-color: #70e61c; /* Grüne Farbe */
-        color: white; /* Weiße Schrift */
-        font-size: 23px; /* Schriftgröße */
-        font-weight: 600; /* Schriftgewicht */
-        padding: 12px 30px; /* Innenabstand (oben/unten, rechts/links) */
-        border: none; /* Kein Rand */
-        border-radius: 15px; /* Abgerundete Ecken */
-        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Schatteneffekt */
-        cursor: pointer; /* Mauszeiger ändert sich zu Hand */
-        transition: all 0.3s ease; /* Animation bei Hover */
-        font-weight: 400;
-    }
-
-    button:hover {
-        background-color: #5fc119; /* Etwas dunkleres Grün beim Hover */
-        box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.3); /* Stärkerer Schatten beim Hover */
-        transform: translateY(-2px); /* Leichtes Heben beim Hover */
-    }
-
-    button:active {
-        transform: translateY(2px); /* Button wird bei Klick leicht nach unten gedrückt */
-        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Schwächerer Schatten bei Klick */
-    }
-}
-@media (max-width: 768px) {
-    section {
-        flex-direction: column; /* Vertikale Anordnung der Elemente */
-        height: auto; /* Automatische Höhe, damit alles korrekt passt */
-    }
-
-    .photo {
-        height: 40vh; /* Kleinere Höhe für das Bild */
-        width: 100%; /* Volle Breite */
-        display: flex;
-        justify-content: center;
-
-        img {
-            width: 80%; /* Proportionale Breite für das Bild */
-            height: auto; /* Höhe passt sich an */
-        }
-    }
-
-    .iam {
-        display: none; /* Verstecke den rotierenden Text "I am" */
-    }
-
-    .name {
-        width: 90%; /* Passe den Textbereich an die Bildschirmbreite an */
-        margin: 0 auto; /* Zentriere den Text */
-        text-align: center; /* Zentriere den Text-Inhalt */
-        
-        .all .green {
-            font-size: 36px; /* Reduzierte Schriftgröße */
-        }
-
-        .all .lila {
-            font-size: 30px; /* Reduzierte Schriftgröße */
-        }
-    }
-
-    .buttonDiv {
-        margin-top: 20px;
-        button {
-            font-size: 18px; /* Kleinere Schriftgröße für den Button */
-            padding: 10px 20px; /* Reduziere die Innenabstände */
+                button {
+                    font-size: 20px;
+                    padding: 10px 20px;
+                }
+            }
         }
     }
 }
