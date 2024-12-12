@@ -13,13 +13,12 @@ body {
     color: white;
 
     .testimonial-container {
-        display: flex
-;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    padding: 61px 0px;
-    margin-top: 69px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        padding: 61px 0px;
+        margin-top: 69px;
 
         .quote-box {
             flex: 1; // Nimmt verfügbaren Platz ein
@@ -89,3 +88,176 @@ body {
         }
     }
 }
+
+@media(max-width: 950px) {
+
+    .testimonial-section {
+        background-color: #141D2F; // Hintergrundfarbe
+        padding: 50px;
+        color: white;
+
+        .testimonial-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            padding: 61px 0px;
+            margin-top: 69px;
+
+            .quote-box {
+                flex: 1; // Nimmt verfügbaren Platz ein
+                max-width: 600px; // Maximale Breite
+                border: 2px solid #70e61c; // Grüne Rahmenfarbe
+                border-radius: 15px;
+                padding: 30px;
+                position: relative;
+
+                .quote-icon {
+                    position: absolute;
+                    top: -45px;
+                    left: -20px;
+                    font-size: 3rem;
+                    color: #9747FF;
+                    font-weight: bold;
+                }
+
+                .quote-text {
+                    font-size: 15px;
+                    line-height: 1.8;
+                    margin-bottom: 20px;
+                    color: white;
+                    font-weight: 400;
+                }
+
+                .author {
+                    font-size: 14px;
+                    line-height: 1.5;
+                    text-align: right;
+                    color: #cfd1d4;
+
+                    span {
+                        color: #ffffff;
+                        font-weight: bold;
+                    }
+                }
+            }
+
+            .profile-box-container {
+                display: flex; // Legt den Kreis und den Strich nebeneinander
+                align-items: center; // Vertikale Ausrichtung
+                gap: 10px; // Abstand zwischen Kreis und Strich
+
+                .profile-box {
+                    position: relative; // Ermöglicht absolute Positionierung der Kinder
+                    width: 167px;
+                    height: 167px;
+                    border: 5px solid #9747FF; // Grüner Rand
+                    border-radius: 50%; // Kreisform
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .profile-picture {
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 50%;
+                        object-fit: cover;
+                    }
+                }
+
+                .purple-line {
+                    width: 100px; // Breite des Strich-Bildes
+                    height: 3px; // Höhe des Strich-Bildes
+                }
+            }
+        }
+    }
+}
+
+
+
+@media(max-width: 694px) {
+
+    .testimonial-section {
+        background-color: #141D2F; // Hintergrundfarbe
+        padding: 50px;
+        color: white;
+
+        .testimonial-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            padding: 61px 0px;
+            margin-top: 69px;
+
+            .quote-box {
+                flex: 1; // Nimmt verfügbaren Platz ein
+                max-width: 600px; // Maximale Breite
+                border: 2px solid #70e61c; // Grüne Rahmenfarbe
+                border-radius: 15px;
+                padding: 30px;
+                position: relative;
+
+                .quote-icon {
+                    position: absolute;
+                    top: -45px;
+                    left: -20px;
+                    font-size: 3rem;
+                    color: #9747FF;
+                    font-weight: bold;
+                }
+
+                .quote-text {
+                    font-size: 15px;
+                    line-height: 1.8;
+                    margin-bottom: 20px;
+                    color: white;
+                    font-weight: 400;
+                }
+
+                .author {
+                    font-size: 14px;
+                    line-height: 1.5;
+                    text-align: right;
+                    color: #cfd1d4;
+
+                    span {
+                        color: #ffffff;
+                        font-weight: bold;
+                    }
+                }
+            }
+
+            .profile-box-container {
+                display: flex; // Legt den Kreis und den Strich nebeneinander
+                align-items: center; // Vertikale Ausrichtung
+                gap: 10px; // Abstand zwischen Kreis und Strich
+
+                .profile-box {
+                    position: relative; // Ermöglicht absolute Positionierung der Kinder
+                    width: 167px;
+                    height: 167px;
+                    border: 5px solid #9747FF; // Grüner Rand
+                    border-radius: 50%; // Kreisform
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .profile-picture {
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 50%;
+                        object-fit: cover;
+                    }
+                }
+
+                .purple-line {
+                    width: 100px; // Breite des Strich-Bildes
+                    height: 3px; // Höhe des Strich-Bildes
+                }
+            }
+        }
+    }
+}
+
