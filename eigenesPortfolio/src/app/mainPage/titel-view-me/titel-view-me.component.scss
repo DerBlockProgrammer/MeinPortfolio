@@ -16,6 +16,9 @@ section {
         background-size: cover;
         background-repeat: no-repeat;
         z-index: 20;
+        >img{
+            height: 80vh;
+        }
     }
 
     .content-wrapper {
@@ -93,6 +96,9 @@ section {
 
         .buttonDiv {
             margin-top: 20px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
 
             button {
                 background-color: #70e61c;
@@ -121,6 +127,8 @@ section {
     }
 }
 
+
+
 @media (max-width: 965px) {
     section {
         flex-direction: column;
@@ -138,10 +146,13 @@ section {
         .photo {
             width: 100%;
             height: auto;
+            display: flex;
+            justify-content: center;
 
             img {
-                width: 100%;
+                width: 80%;
                 height: auto;
+                max-height: 300px; /* Maximale Höhe des Bildes */
             }
         }
 
@@ -149,6 +160,7 @@ section {
             width: 100%;
             align-items: center;
             text-align: center;
+            margin-top: 20px;
 
             .iam-and-name {
                 flex-direction: column;
@@ -157,26 +169,29 @@ section {
 
                 .iam {
                     transform: none;
-                    font-size: 32px;
+                    font-size: 28px; /* Kleinere Schriftgröße */
                     text-align: center;
+                    margin-bottom: 10px;
                 }
 
                 .name .all {
                     .green {
-                        font-size: 36px;
+                        font-size: 24px; /* Angepasste Schriftgröße */
                     }
 
                     .lila {
-                        font-size: 28px;
+                        font-size: 20px; /* Angepasste Schriftgröße */
                     }
                 }
             }
 
             .buttonDiv {
                 margin-top: 20px;
+                display: flex;
+                justify-content: center;
 
                 button {
-                    font-size: 20px;
+                    font-size: 18px;
                     padding: 10px 20px;
                 }
             }
