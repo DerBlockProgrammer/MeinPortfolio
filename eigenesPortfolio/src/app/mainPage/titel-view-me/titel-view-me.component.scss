@@ -55,14 +55,14 @@ section {
 
         .iam-and-name {
             display: flex;
-            align-items: flex-start; /* Horizontale Ausrichtung oben */
+            align-items: flex-start; 
             height: 200px;
             
             .iam {
-                transform: rotate(-90deg); /* Vertikal drehen */
+                transform: rotate(-90deg); 
                 font-size: 35px;
                 color: white;
-                line-height: 1; /* Geringer Zeilenabstand */
+                line-height: 1; 
                 margin-top: 49px;
 
                 h2 {
@@ -152,7 +152,7 @@ section {
             img {
                 width: 80%;
                 height: auto;
-                max-height: 300px; /* Maximale Höhe des Bildes */
+                max-height: 300px; 
             }
         }
 
@@ -169,18 +169,18 @@ section {
 
                 .iam {
                     transform: none;
-                    font-size: 28px; /* Kleinere Schriftgröße */
+                    font-size: 28px; 
                     text-align: center;
                     margin-bottom: 10px;
                 }
 
                 .name .all {
                     .green {
-                        font-size: 24px; /* Angepasste Schriftgröße */
+                        font-size: 24px; 
                     }
 
                     .lila {
-                        font-size: 20px; /* Angepasste Schriftgröße */
+                        font-size: 20px; 
                     }
                 }
             }
