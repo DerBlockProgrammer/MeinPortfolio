@@ -28,3 +28,49 @@ section {
     font-size: 18px;
     font-weight: 400;
 }
+
+@media (max-width: 404px) {
+    section {
+        position: relative;
+        display: flex;
+       
+        align-items: center;
+ 
+        background-color: #141D2F;
+
+        #links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            margin-top: 20px;
+
+            .buttonsSocial {
+                img {
+                    height: 30px;
+                    width: 30px;
+                    cursor: pointer;
+                    transition: transform 0.3s ease;
+
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+
+            h3 {
+                display: none; /* E-Mail wird entfernt */
+            }
+        }
+
+        .shape {
+            position: absolute;
+            top: 50%; /* Zentriert den Strich vertikal */
+            left: 0; /* Schiebt den Strich komplett nach links */
+            height: 2px; /* Höhe des Strichs */
+            width: 50px; /* Breite des Strichs */
+            background-color: #9747FF; /* Lila Farbe */
+            transform: translateY(-50%); /* Vertikale Zentrierung */
+        }
+    }
+}

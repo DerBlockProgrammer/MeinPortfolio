@@ -274,3 +274,81 @@
     }
   
 }
+
+@media (max-width: 404px) {
+    .about-section {
+        flex-direction: column; /* Inhalte vertikal anordnen */
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        height: auto;
+
+        .text-content {
+            max-width: 100%; /* Textbereich nimmt gesamte Breite ein */
+            margin: 0;
+            margin-bottom: 20px;
+            margin-top: 50px;
+
+            h1 {
+                font-size: 22px;
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-size: 12px;
+                line-height: 1.5;
+                margin-bottom: 15px;
+            }
+
+            .features {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+
+                .feature {
+                    display: flex; /* Flexbox für Icon und Text */
+                    flex-direction: row; /* Icon und Text nebeneinander */
+                    align-items: center;
+                    gap: 10px; /* Abstand zwischen Icon und Text */
+
+                    .icon {
+                        height: 30px;
+                        width: 30px;
+
+                        img {
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+
+                    p {
+                        font-size: 10px;
+                        text-align: left; /* Text linksbündig ausrichten */
+                        margin: 0;
+                    }
+                }
+            }
+        }
+
+        .profile {
+            margin-bottom: 20px;
+            display: none;
+
+            img {
+                border: 3px solid #00FF00;
+                border-radius: 50%;
+                width: 120px;
+                height: 120px;
+                display: none;
+            }
+
+            .profile-line {
+                display: none; /* Grüner Kreis wird ausgeblendet */
+            }
+        }
+
+        .lila {
+            display: none; /* Hintergrundelement ausblenden */
+        }
+    }
+}
