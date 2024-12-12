@@ -10,7 +10,7 @@ section {
 
     .background-green {
         position: absolute;
-        left: 200px;
+        left: 52px;
         width: 57%;
         height: 100%;
         background-size: cover;
@@ -48,19 +48,19 @@ section {
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-        height: 100%;
         position: relative;
 
         .iam-and-name {
             display: flex;
             align-items: flex-start; /* Horizontale Ausrichtung oben */
-            gap: 20px; /* Abstand zwischen "I am" und Name */
-
+            height: 200px;
+            
             .iam {
                 transform: rotate(-90deg); /* Vertikal drehen */
-                font-size: 64px;
+                font-size: 35px;
                 color: white;
                 line-height: 1; /* Geringer Zeilenabstand */
+                margin-top: 49px;
 
                 h2 {
                     font-weight: 400;
