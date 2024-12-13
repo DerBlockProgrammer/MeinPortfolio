@@ -1,6 +1,6 @@
 section {
     position: relative;
-    background-color: #141D2F;
+    // background-color: #141D2F;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,6 +52,7 @@ section {
         justify-content: center;
         align-items: flex-start;
         position: relative;
+        z-index: 100;
 
         .iam-and-name {
             display: flex;
