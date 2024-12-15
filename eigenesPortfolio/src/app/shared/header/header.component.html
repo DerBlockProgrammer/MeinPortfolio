@@ -1,16 +1,28 @@
-<header>
-    <div id="over">
-        <h1>Marc Vossler</h1>
-        <div id="navbar">
-            <a href="#">About Me</a>
-            <a href="#">Skills</a>
-            <a href="#">Portfolio</a>
-        </div>
-      
-        <div class="menu-icon">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </div>
+<header class="header">
+    <!-- Logo -->
+    <div class="logo">
+      <span>Mar<span class="highlight">C</span></span>
     </div>
-</header>
+  
+    <!-- Navbar für größere Bildschirme -->
+    <nav id="navbar">
+      <a href="#about">About Me</a>
+      <a href="#skills">Skills</a>
+      <a href="#portfolio">Portfolio</a>
+    </nav>
+  
+    <!-- Hamburger-Menü für mobile Ansicht -->
+    <div class="menu-icon" (click)="toggleMenu()">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+  
+    <!-- Dropdown-Menü für kleinere Bildschirme -->
+    <div class="mobile-menu" [class.show]="isMenuOpen">
+      <a href="#" (click)="closeMenu()">About Me</a>
+      <a href="#" (click)="closeMenu()">Skills</a>
+      <a href="#" (click)="closeMenu()">Portfolio</a>
+    </div>
+  </header>
+  

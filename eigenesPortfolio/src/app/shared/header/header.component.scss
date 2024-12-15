@@ -1,83 +1,100 @@
-header {
-    display: flex;
+/* Grundlegendes Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
     background-color: #141D2F;
-    justify-content: center;
+    color: white;
+  }
+  
+  /* Header-Styling */
+  .header {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    height: 100px;
-
-    #over {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: calc(100% - 200px);
-
-        h1 {
-            font-size: 20px;
-            color: white;
-        }
-
-        #navbar {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            flex-direction: row;
-            gap: 29px;
-
-            a {
-                color: white;
-                text-decoration: none;
-            }
-        }
-
-        .menu-icon {
-            display: none; 
-            flex-direction: column;
-            justify-content: space-between;
-            height: 24px;
-            width: 30px;
-            cursor: pointer;
-
-            .line {
-                height: 3px;
-                width: 100%;
-                background-color: white;
-                border-radius: 3px;
-            }
-        }
+    padding: 10px 20px;
+    background-color: #141D2F;
+  
+    /* Logo */
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+  
+      .highlight {
+        color: #70e61c; // Grün für 'k'
+      }
     }
-}
-
-
-@media (max-width: 404px) {
-    header {
-        height: 80px; 
-
-        #over {
-            width: calc(100% - 40px); 
-            justify-content: space-between;
-
-            h1 {
-                font-size: 18px; 
-            }
-
-            #navbar {
-                display: none; 
-            }
-
-            .menu-icon {
-                display: flex; 
-                flex-direction: column;
-                justify-content: space-between;
-                height: 18px; 
-                width: 25px;
-
-                .line {
-                    height: 2px; 
-                    width: 100%;
-                    background-color: white;
-                    border-radius: 1px;
-                }
-            }
+  
+    /* Navbar für größere Bildschirme */
+    #navbar {
+      display: flex;
+      gap: 20px;
+  
+      a {
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+        transition: color 0.3s;
+  
+        &:hover {
+          color: #70e61c;
         }
+      }
     }
-}
+  
+    /* Hamburger-Menü */
+    .menu-icon {
+      display: none; // Standardmäßig ausgeblendet
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+  
+      .line {
+        width: 25px;
+        height: 3px;
+        background-color: white;
+      }
+    }
+  
+    /* Dropdown-Menü */
+    .mobile-menu {
+        display: none; /* Standardmäßig versteckt */
+        background-color: #141D2F;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        text-align: center;
+        z-index: 10000; /* Menü vor andere Elemente setzen */
+      
+        a {
+          display: block;
+          padding: 10px;
+          text-decoration: none;
+          color: white;
+          font-size: 18px;
+      
+          &:hover {
+            color: #70e61c;
+          }
+        }
+      
+        &.show {
+          display: block; /* Dropdown-Menü anzeigen */
+        }
+      }
+      
+  }
+  
+  /* Responsives Styling */
+  @media (max-width: 404px) {
+    .header {
+      #navbar {
+        display: none; // Hauptnavigation ausblenden
+      }
+  
+      .menu-icon {
+        display: flex; // Hamburger-Icon anzeigen
+      }
+    }
+  }
+  
