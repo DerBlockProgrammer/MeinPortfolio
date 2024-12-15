@@ -10,3 +10,14 @@
     position: relative;
     z-index: 1000;
 }
+
+@media(max-width: 404px){
+    .shape{
+        margin-top: -404px;
+        width: 100%;
+        z-index: 5000;
+        position: absolute;
+        height: 253px
+    
+    }
+}
