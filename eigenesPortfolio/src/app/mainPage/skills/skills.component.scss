@@ -336,6 +336,124 @@
 
 }
 
+
+@media(max-width: 701px) {
+    .skills-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        background-color: #141D2F;
+        // padding: 50px 100px;
+        color: white;
+        height: auto;
+        margin-top: 98vh;
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            /* 4 Spalten */
+            gap: 20px;
+            /* Abstand zwischen den Items */
+            flex: 1;
+
+            .skill {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+
+                img {
+                    width: 52px;
+                    height: auto;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+        .skills-text {
+      
+
+            h2 {
+                display: flex;
+                justify-content: end;
+                font-size: 30px;
+                font-weight: bold;
+                margin-bottom: 20px;
+            }
+
+            p {
+                font-size: 10px;
+                line-height: 1.8;
+                margin-bottom: 20px;
+
+                &.highlight {
+                    font-weight: bold;
+                    font-size: 17px;
+                    text-align: right;
+
+                    span {
+                        color: #9747FF;
+                        /* Lila Farbe für "another skill" */
+                    }
+                }
+            }
+
+            .button {
+                display: flex;
+                justify-content: flex-end;
+                /* Button rechtsbündig */
+                margin-top: 30px;
+
+                button {
+                    background-color: #70e61c;
+                    /* Grüne Farbe */
+                    color: white;
+                    /* Weiße Schrift */
+                    font-size: 11px;
+                    /* Schriftgröße */
+                    font-weight: 600;
+                    /* Schriftgewicht */
+                    padding: 15px 40px;
+                    /* Innenabstand (oben/unten, rechts/links) */
+                    border: none;
+                    /* Kein Rand */
+                    border-radius: 25px;
+                    /* Abgerundete Ecken */
+                    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+                    /* Schatteneffekt */
+                    cursor: pointer;
+                    /* Mauszeiger ändert sich zu Hand */
+                    transition: all 0.3s ease;
+                    /* Animation bei Hover */
+                }
+
+                button:hover {
+                    background-color: #5fc119;
+                    /* Etwas dunkleres Grün beim Hover */
+                    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.3);
+                    /* Stärkerer Schatten beim Hover */
+                    transform: translateY(-2px);
+                    /* Leichtes Heben beim Hover */
+                }
+
+                button:active {
+                    transform: translateY(2px);
+                    /* Button wird bei Klick leicht nach unten gedrückt */
+                    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+                    /* Schwächerer Schatten bei Klick */
+                }
+            }
+        }
+
+        .greens {
+            position: absolute;
+            left: 0;
+        }
+    }
+
+}
+
+
 @media (max-width: 404px) {
     .skills-section {
         position: relative;

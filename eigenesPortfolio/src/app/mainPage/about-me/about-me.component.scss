@@ -201,14 +201,14 @@
 
 
             h1 {
-                font-size: 30px;
+                font-size: 58px;
                 font-weight: 700;
                 margin-bottom: 20px;
 
 
             }
             p {
-                font-size: 10px;
+                font-size: 14px;
                 line-height: 1.8;
                 margin-bottom: 20px;
                 font-weight: 400;
@@ -229,14 +229,14 @@
                         width: 40px;
     
                         img {
-                            width: 100%;
+                            width: 40px;
                             height: auto;
                             margin-top: -10px;
                         }
                     }
     
                     p {
-                        font-size: 10px;
+                        font-size: 13px;
                         line-height: 1.5;
                     }
                 }
@@ -274,6 +274,95 @@
     }
   
 }
+
+
+@media(max-width: 701px) {
+    .about-section {
+        
+        .text-content {
+            flex: 1;
+            max-width: 50%;
+            position: relative;
+            z-index: 1;
+            margin-left: 10vh;
+
+
+
+            h1 {
+                font-size: 42px;
+                font-weight: 700;
+                margin-bottom: 20px;
+
+
+            }
+            p {
+                font-size: 14px;
+                line-height: 1.8;
+                margin-bottom: 20px;
+                font-weight: 400;
+            }
+
+            .features {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+    
+                .feature {
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+    
+                    .icon {
+                        height: 40px;
+                        width: 40px;
+    
+                        img {
+                            width: 40px;
+                            height: auto;
+                            margin-top: -10px;
+                        }
+                    }
+    
+                    p {
+                        font-size: 13px;
+                        line-height: 1.5;
+                    }
+                }
+            }
+        }
+        .profile {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            z-index: 1; // Bild bleibt sichtbar über dem Hintergrund
+    
+            img {
+                border: 5px solid #00FF00;
+                border-radius: 50%;
+                width: 140px;
+                height: 140px;
+                object-fit: cover;
+            }
+    
+            .profile-line {
+                position: absolute;
+                height: 3px;
+                background-color: #00FF00;
+                top: 50%;
+                transform: translateY(-50%);
+                right: -150px;
+            }
+
+            
+        }
+        
+       
+        
+    }
+  
+}
+
 
 @media (max-width: 404px) {
     .about-section {

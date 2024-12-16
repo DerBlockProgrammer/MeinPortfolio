@@ -28,6 +28,78 @@ section {
     font-size: 18px;
     font-weight: 400;
 }
+@media(max-width: 544px){
+
+    section {
+        background-color: #141D2F;
+        display: flex
+    ;
+        justify-content: start;
+        align-items: center;
+        padding: -1px 49px;
+        z-index: 3000;
+        position: absolute;
+    }
+    
+    #links {
+        display: flex;
+        align-items: center; 
+        gap: 32px; 
+        // margin-top: 12px;
+    }
+    
+    .buttonsSocial img {
+        height: 25px;
+        width: 25px;
+        cursor: pointer;
+        margin-top: 50%;
+    }
+    
+    #links h3 {
+        color: white;
+        margin: 0; 
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+}
+
+@media(max-width: 544px){
+
+    section {
+        background-color: #141D2F;
+        display: flex
+    ;
+        justify-content: start;
+        align-items: center;
+        padding: -1px 49px;
+        z-index: 3000;
+        position: absolute;
+    }
+    
+    #links {
+        display: flex;
+        align-items: center; 
+        gap: 32px; 
+        // margin-top: 12px;
+    }
+    
+    .buttonsSocial img {
+        height: 25px;
+        width: 25px;
+        cursor: pointer;
+        margin-top: 50%;
+    }
+    
+    #links h3 {
+        display: none;
+        color: white;
+        margin: 0; 
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+}
 
 @media (max-width: 404px) {
     section {
