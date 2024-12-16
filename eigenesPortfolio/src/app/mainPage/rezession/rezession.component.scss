@@ -9,12 +9,11 @@ body {
 /* Testimonial Section */
 .testimonial-section {
     background-color: #141D2F; // Hintergrundfarbe
-    padding: 50px;
     color: white;
 
     .testimonial-container {
         display: flex;
-        justify-content: center;
+        justify-content: end;
         align-items: center;
         gap: 50px;
         padding: 61px 0px;
@@ -74,13 +73,13 @@ body {
             }
 
             .profile-line {
-                position: absolute;
-                width: 400px;
+                position: relative;
+                width: 424px;
                 height: 3px;
                 background-color: #00FF00;
                 top: 50%;
                 transform: translateY(-50%);
-                right: -310px;
+                right: 0px;
             }
         }
 
@@ -91,12 +90,12 @@ body {
 
     .testimonial-section {
         background-color: #141D2F; // Hintergrundfarbe
-        padding: 50px;
+
         color: white;
 
         .testimonial-container {
             display: flex;
-            justify-content: center;
+
             align-items: center;
             gap: 50px;
             padding: 61px 0px;
@@ -270,6 +269,18 @@ body {
             gap: 20px;
             margin-top: -24px;
 
+            >.profile {
+                .profile-line {
+                    position: relative;
+                    width: 229px;
+                    height: 3px;
+                    background-color: #00FF00;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: 0px;
+                }
+            }
+
             .profile-box-container {
                 order: -1;
                 flex-direction: column;
@@ -277,22 +288,24 @@ body {
                 margin-bottom: 20px;
 
                 .profile-box {
-                    width: 144px; /* Festgelegte Größe der Box */
+                    width: 144px;
+                    /* Festgelegte Größe der Box */
                     height: 144px;
                     border: 3px solid #9747FF;
 
-                    > img {
-                        border: 3px solid #00FF00; /* Optionaler Rand */
+                    >img {
+                        border: 3px solid #00FF00;
+                        /* Optionaler Rand */
                         border-radius: 50%;
-                        width: 144px; /* Bild wird direkt auf 144px gesetzt */
+                        width: 144px;
+                        /* Bild wird direkt auf 144px gesetzt */
                         height: 144px;
-                        object-fit: cover; /* Zuschneiden des Bildes */
+                        object-fit: cover;
+                        /* Zuschneiden des Bildes */
                     }
                 }
 
-                .profile-line {
-                    display: none; /* Linie ausblenden */
-                }
+
             }
 
             .quote-box {
@@ -306,7 +319,7 @@ body {
                     left: -18px;
                     font-size: 2rem;
 
-                    > img {
+                    >img {
                         height: 48px;
                     }
                 }
@@ -321,6 +334,17 @@ body {
                     margin-top: 10px;
                     padding-right: 147px;
                 }
+            }
+
+            .profile {
+                >img {
+                    border: 4px solid #00FF00;
+                    border-radius: 50%;
+                    width: 144px;
+                    height: 144px;
+                    object-fit: cover;
+                }
+
             }
         }
     }

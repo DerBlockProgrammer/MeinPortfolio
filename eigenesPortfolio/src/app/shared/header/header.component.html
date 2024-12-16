@@ -1,24 +1,25 @@
 <header class="header">
-    <!-- Logo -->
+
     <div class="logo">
+      <!-- <img src="./public/projektLogo.png" alt=""> -->
       <span>Mar<span class="highlight">C</span></span>
     </div>
   
-    <!-- Navbar für größere Bildschirme -->
+
     <nav id="navbar">
       <a href="#about">About Me</a>
       <a href="#skills">Skills</a>
       <a href="#portfolio">Portfolio</a>
     </nav>
   
-    <!-- Hamburger-Menü für mobile Ansicht -->
+  
     <div class="menu-icon" (click)="toggleMenu()">
       <div class="line"></div>
       <div class="line"></div>
       <div class="line"></div>
     </div>
   
-    <!-- Dropdown-Menü für kleinere Bildschirme -->
+
     <div class="mobile-menu" [class.show]="isMenuOpen">
       <a href="#" (click)="closeMenu()">About Me</a>
       <a href="#" (click)="closeMenu()">Skills</a>

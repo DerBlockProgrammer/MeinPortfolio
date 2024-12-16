@@ -3,10 +3,10 @@
     justify-content: space-between;
     align-items: flex-start;
     background-color: #141D2F;
-    padding: 50px 100px;
     color: white;
     height: auto;
     margin-top: 98vh;
+    width: 98%;
 
     .skills-grid {
         display: grid;
@@ -29,9 +29,20 @@
             }
         }
     }
+    .skills-grid2{
+        display: none;
+        grid-template-columns: repeat(4, 1fr);
+        /* 4 Spalten */
+        gap: 20px;
+        /* Abstand zwischen den Items */
+        flex: 1;
+    }
 
     .skills-text {
-        padding-left: 50px;
+        padding-left: 0; 
+      
+        max-width: 46%; 
+        text-align: right; 
 
         h2 {
             display: flex;
@@ -53,7 +64,7 @@
 
                 span {
                     color: #9747FF;
-                    /* Lila Farbe für "another skill" */
+                    
                 }
             }
         }
@@ -61,46 +72,30 @@
         .button {
             display: flex;
             justify-content: flex-end;
-            /* Button rechtsbündig */
             margin-top: 30px;
 
             button {
                 background-color: #70e61c;
-                /* Grüne Farbe */
                 color: white;
-                /* Weiße Schrift */
                 font-size: 18px;
-                /* Schriftgröße */
                 font-weight: 600;
-                /* Schriftgewicht */
                 padding: 15px 40px;
-                /* Innenabstand (oben/unten, rechts/links) */
                 border: none;
-                /* Kein Rand */
                 border-radius: 25px;
-                /* Abgerundete Ecken */
                 box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
-                /* Schatteneffekt */
                 cursor: pointer;
-                /* Mauszeiger ändert sich zu Hand */
                 transition: all 0.3s ease;
-                /* Animation bei Hover */
             }
 
             button:hover {
                 background-color: #9747FF;
-                /* Etwas dunkleres Grün beim Hover */
                 box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.3);
-                /* Stärkerer Schatten beim Hover */
                 transform: translateY(-2px);
-                /* Leichtes Heben beim Hover */
             }
 
             button:active {
                 transform: translateY(2px);
-                /* Button wird bei Klick leicht nach unten gedrückt */
                 box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
-                /* Schwächerer Schatten bei Klick */
             }
         }
     }
@@ -117,7 +112,7 @@
         justify-content: space-between;
         align-items: flex-start;
         background-color: #141D2F;
-        padding: 50px 100px;
+        // padding: 50px 100px;
         color: white;
         height: auto;
         margin-top: 98vh;
@@ -125,9 +120,7 @@
         .skills-grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            /* 4 Spalten */
             gap: 20px;
-            /* Abstand zwischen den Items */
             flex: 1;
 
             .skill {
@@ -145,7 +138,7 @@
         }
 
         .skills-text {
-            padding-left: 50px;
+        
 
             h2 {
                 display: flex;
@@ -233,7 +226,7 @@
         justify-content: space-between;
         align-items: flex-start;
         background-color: #141D2F;
-        padding: 50px 100px;
+        // padding: 50px 100px;
         color: white;
         height: auto;
         margin-top: 98vh;
@@ -261,7 +254,7 @@
         }
 
         .skills-text {
-            padding-left: 69px;
+      
 
             h2 {
                 display: flex;
@@ -349,7 +342,7 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
-        padding: 20px;
+        // padding: 20px;
         margin-top: 84vh;
 
         .greens {
@@ -388,9 +381,29 @@
         }
 
         .skills-grid {
+            display: none;
             position: relative;
             z-index: 0; /* Icons bleiben hinter dem Text */
+            grid-template-columns: repeat(3, 1fr); /* 3 Icons pro Reihe */
+            gap: 15px; /* Abstand zwischen Icons */
+            margin-top: 20px; /* Abstand zu Überschrift und Text */
+
+            .skill {
+                img {
+                    width: 48px; /* Kleinere Icons für mobile Ansicht */
+                    height: 48px;
+                    margin-bottom: 5px;
+                }
+
+                p {
+                    font-size: 10px; /* Kleinere Beschriftung */
+                }
+            }
+        }
+        .skills-grid2{
             display: grid;
+            position: relative;
+            z-index: 0; /* Icons bleiben hinter dem Text */
             grid-template-columns: repeat(3, 1fr); /* 3 Icons pro Reihe */
             gap: 15px; /* Abstand zwischen Icons */
             margin-top: 20px; /* Abstand zu Überschrift und Text */
