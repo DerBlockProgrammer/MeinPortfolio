@@ -272,7 +272,7 @@ body {
             >.profile {
                 .profile-line {
                     position: relative;
-                    width: 229px;
+                    width: 77px;
                     height: 3px;
                     background-color: #00FF00;
                     top: 50%;
@@ -337,6 +337,13 @@ body {
             }
 
             .profile {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                z-index: 1;
+                padding-left: 145px;
+
                 >img {
                     border: 4px solid #00FF00;
                     border-radius: 50%;
