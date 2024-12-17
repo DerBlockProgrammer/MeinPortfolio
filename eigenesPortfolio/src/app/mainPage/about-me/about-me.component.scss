@@ -3,11 +3,10 @@
     justify-content: space-between;
     align-items: center;
     background-color: #141D2F;
-    // padding: 50px 100px;
     color: white;
     height: 87vh;
     overflow: hidden;
-    position: absolute;
+    position: relative; // Korrigiert z-index Probleme
 
     .text-content {
         flex: 1;
@@ -16,14 +15,10 @@
         z-index: 1;
         margin-left: 10vh;
 
-
-
         h1 {
             font-size: 90px;
             font-weight: 700;
             margin-bottom: 20px;
-
-
         }
 
         p {
@@ -93,468 +88,178 @@
         position: absolute;
         top: -4%;
         right: -150vh;
-
         height: 300px;
         transform: translateY(-50%);
         opacity: 0.7;
         z-index: -1;
     }
-
 }
 
-@media(max-width: 1000px) {
+// Anpassungen für mittlere Bildschirme
+@media (max-width: 1000px) {
     .about-section {
-
         .text-content {
-            flex: 1;
-            max-width: 50%;
-            position: relative;
-            z-index: 1;
-            margin-left: 10vh;
-
-
-
             h1 {
                 font-size: 60px;
-                font-weight: 700;
-                margin-bottom: 20px;
-
-
             }
 
             p {
                 font-size: 12px;
-                line-height: 1.8;
-                margin-bottom: 20px;
-                font-weight: 400;
             }
 
-            .features {
-                display: flex;
-                flex-direction: column;
-                gap: 15px;
-
-                .feature {
-                    display: flex;
-                    align-items: center;
-                    gap: 15px;
-
-                    .icon {
-                        height: 40px;
-                        width: 40px;
-
-                        img {
-                            width: 100%;
-                            height: auto;
-                            margin-top: -10px;
-                        }
-                    }
-
-                    p {
-                        font-size: 12px;
-                        line-height: 1.5;
-                    }
-                }
+            .features .feature p {
+                font-size: 12px;
             }
         }
 
-        .profile {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-            z-index: 1;
-
-            img {
-                border: 5px solid #00FF00;
-                border-radius: 50%;
-                width: 200px;
-                height: 200px;
-                object-fit: cover;
-            }
-
-            .profile-line {
-                position: absolute;
-                height: 3px;
-                background-color: #00FF00;
-                top: 50%;
-                transform: translateY(-50%);
-                right: -209px;
-            }
-
-
+        .profile img {
+            width: 200px;
+            height: 200px;
         }
 
-
-
+        .profile-line {
+            right: -209px;
+        }
     }
-
 }
 
-@media(max-width: 830px) {
+@media (max-width: 830px) {
     .about-section {
-
         .text-content {
-            flex: 1;
-            max-width: 50%;
-            position: relative;
-            z-index: 1;
-            margin-left: 10vh;
-
-
-
             h1 {
                 font-size: 58px;
-                font-weight: 700;
-                margin-bottom: 20px;
-
-
             }
 
             p {
                 font-size: 14px;
-                line-height: 1.8;
-                margin-bottom: 20px;
-                font-weight: 400;
             }
 
-            .features {
-                display: flex;
-                flex-direction: column;
-                gap: 15px;
-
-                .feature {
-                    display: flex;
-                    align-items: center;
-                    gap: 15px;
-
-                    .icon {
-                        height: 40px;
-                        width: 40px;
-
-                        img {
-                            width: 40px;
-                            height: auto;
-                            margin-top: -10px;
-                        }
-                    }
-
-                    p {
-                        font-size: 13px;
-                        line-height: 1.5;
-                    }
-                }
+            .features .feature p {
+                font-size: 13px;
             }
         }
 
-        .profile {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-            z-index: 1; // Bild bleibt sichtbar über dem Hintergrund
-
-            img {
-                border: 5px solid #00FF00;
-                border-radius: 50%;
-                width: 140px;
-                height: 140px;
-                object-fit: cover;
-            }
-
-            .profile-line {
-                position: absolute;
-                height: 3px;
-                background-color: #00FF00;
-                top: 50%;
-                transform: translateY(-50%);
-                right: -150px;
-            }
-
-
+        .profile img {
+            width: 140px;
+            height: 140px;
         }
 
-
-
+        .profile-line {
+            right: -150px;
+        }
     }
-
 }
 
-
-
-
-@media(max-width: 701px) {
+@media (max-width: 701px) {
     .about-section {
-
         .text-content {
-            flex: 1;
-            max-width: 50%;
-            position: relative;
-            z-index: 1;
-            margin-left: 10vh;
-
-
-
             h1 {
                 font-size: 42px;
-                font-weight: 700;
-                margin-bottom: 20px;
-
-
             }
 
             p {
                 font-size: 14px;
-                line-height: 1.8;
-                margin-bottom: 20px;
-                font-weight: 400;
             }
 
-            .features {
-                display: flex;
-                flex-direction: column;
-                gap: 15px;
-
-                .feature {
-                    display: flex;
-                    align-items: center;
-                    gap: 15px;
-
-                    .icon {
-                        height: 40px;
-                        width: 40px;
-
-                        img {
-                            width: 40px;
-                            height: auto;
-                            margin-top: -10px;
-                        }
-                    }
-
-                    p {
-                        font-size: 13px;
-                        line-height: 1.5;
-                    }
-                }
+            .features .feature p {
+                font-size: 13px;
             }
         }
 
-        .profile {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-            z-index: 1; // Bild bleibt sichtbar über dem Hintergrund
-
-            img {
-                border: 5px solid #00FF00;
-                border-radius: 50%;
-                width: 140px;
-                height: 140px;
-                object-fit: cover;
-            }
-
-            .profile-line {
-                position: absolute;
-                height: 3px;
-                background-color: #00FF00;
-                top: 50%;
-                transform: translateY(-50%);
-                right: -150px;
-            }
-
-
+        .profile img {
+            width: 140px;
+            height: 140px;
         }
 
-
-
+        .profile-line {
+            right: -150px;
+        }
     }
-
 }
 
-@media(max-width: 490px) {
+@media (max-width: 490px) {
     .about-section {
-        display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: #141D2F;
-        // padding: 50px 100px;
-        color: white;
-        height: 96vh;
-        overflow: hidden;
-        position: absolute;
+        height: auto; // Ersetzt 96vh
+        padding: 20px;
 
         .text-content {
-            flex: 1;
-            max-width: 50%;
-            position: relative;
-            z-index: 1;
-            margin-left: 10vh;
-
-
+            max-width: 100%;
+            margin: 0;
 
             h1 {
                 font-size: 33px;
-                font-weight: 700;
-                margin-bottom: 20px;
-
-
             }
 
             p {
                 font-size: 11px;
-                line-height: 1.8;
-                margin-bottom: 20px;
-                font-weight: 400;
             }
 
-            .features {
-                display: flex;
-                flex-direction: column;
-                gap: 8px;
+            .features .feature {
+                gap: 10px;
 
-                .feature {
-                    display: flex;
-                    align-items: center;
-                    gap: 15px;
+                .icon img {
+                    width: 30px;
+                }
 
-                    .icon {
-                        height: 40px;
-                        width: 40px;
-
-                        img {
-                            width: 40px;
-                            height: auto;
-                            margin-top: -10px;
-                        }
-                    }
-
-                    p {
-                        font-size: 11px;
-                        line-height: 1.5;
-                    }
+                p {
+                    font-size: 11px;
                 }
             }
         }
 
         .profile {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-            z-index: 1; // Bild bleibt sichtbar über dem Hintergrund
-            display: none;
-
-            img {
-                border: 5px solid #00FF00;
-                border-radius: 50%;
-                width: 140px;
-                height: 140px;
-                object-fit: cover;
-            }
-
-            .profile-line {
-                position: absolute;
-                height: 3px;
-                background-color: #00FF00;
-                top: 50%;
-                transform: translateY(-50%);
-                right: -150px;
-            }
-
-
+            display: none; // Versteckt Profilbild und Linie
         }
-
-
-
     }
-
 }
 
-
+// Anpassungen für 404px
 @media (max-width: 404px) {
     .about-section {
         flex-direction: column;
-        /* Inhalte vertikal anordnen */
+        justify-content: center;
         align-items: center;
         text-align: center;
         padding: 20px;
-        height: 197vw;
+        height: auto; // Keine harte Höhe, verhindert Springen
 
         .text-content {
             max-width: 100%;
-            /* Textbereich nimmt gesamte Breite ein */
             margin: 0;
-            margin-bottom: 20px;
-            margin-top: 104px;
 
             h1 {
-                font-size: 48px;
+                font-size: 32px;
                 margin-bottom: 10px;
             }
 
             p {
-                font-size: 16px;
-                line-height: 1.5;
-                margin-bottom: 15px;
+                font-size: 14px;
+                line-height: 1.6;
+                margin-bottom: 10px;
             }
 
             .features {
-                display: flex;
-                flex-direction: column;
-                gap: 15px;
-
                 .feature {
-                    display: flex;
-                    /* Flexbox für Icon und Text */
                     flex-direction: row;
-                    /* Icon und Text nebeneinander */
-                    align-items: center;
                     gap: 10px;
-                    /* Abstand zwischen Icon und Text */
 
-                    .icon {
-                        height: 30px;
+                    .icon img {
                         width: 30px;
-
-                        img {
-                            width: 48px;
-                            height: auto;
-                        }
                     }
 
                     p {
-                        font-size: 14px;
-                        text-align: left;
-                        /* Text linksbündig ausrichten */
-                        margin: 0;
-                        padding-left: 20px;
+                        font-size: 12px;
                     }
                 }
             }
         }
 
-        .profile {
-            margin-bottom: 20px;
-            display: none;
-
-            img {
-                border: 3px solid #00FF00;
-                border-radius: 50%;
-                width: 120px;
-                height: 120px;
-                display: none;
-            }
-
-            .profile-line {
-                display: none;
-                /* Grüner Kreis wird ausgeblendet */
-            }
-        }
-
+        .profile,
         .lila {
-            display: none;
-            /* Hintergrundelement ausblenden */
+            display: none; // Profil und Hintergrund deaktivieren
         }
     }
 }

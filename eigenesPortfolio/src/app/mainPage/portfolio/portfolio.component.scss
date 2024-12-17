@@ -192,7 +192,7 @@
 
                     .buttons {
                         display: flex;
-                        gap: 86px;
+                        gap: 67px;
 
 
                         .btn {
@@ -276,10 +276,36 @@
         text-align: center;
 
         .portfolio-header {
+            position: relative; /* Grundlage für Hintergrund */
+            background-image: url("../../../../public/background/lilavector.png"); /* Pfad zum Bild */
+            background-size: cover; /* Sorgt dafür, dass der Hintergrund das Element abdeckt */
+            background-position: center; /* Zentriert das Bild */
+            background-repeat: no-repeat; /* Verhindert Wiederholung */
             h2 {
-                font-size: 45px; /* Kleinere Schriftgröße */
-                margin-top: 20px;
-                margin-bottom: 10px;
+                position: relative;
+                display: inline-block;
+                font-size: 45px;
+                margin: 20px 0;
+
+                &::before,
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    width: 50px; /* Länge der Linien */
+                    height: 2px; /* Dicke der Linien */
+                    background-color: #9747FF; /* Lila Farbe */
+                }
+    
+                &::before {
+                    left: -60px; /* Position links */
+                    transform: translateY(-50%);
+                }
+    
+                &::after {
+                    right: -60px; /* Position rechts */
+                    transform: translateY(-50%);
+                }
             }
 
             p {
@@ -287,6 +313,7 @@
                 margin-bottom: -100px;
             }
         }
+
 
         .portfolio-grid {
             display: flex;
