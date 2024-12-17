@@ -150,6 +150,33 @@
     }
 }
 
+
+@media(max-width: 790px) {
+    .about-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #141D2F;
+        color: white;
+        height: 87vh;
+        overflow: hidden;
+        position: relative; // Korrigiert z-index Probleme
+
+        .profile img {
+            width: 140px;
+            height: 140px;
+            display: none;
+        }
+
+        .profile-line {
+            right: -150px;
+            display: none;
+        }
+    }
+    
+    
+}
+
 @media (max-width: 701px) {
     .about-section {
         .text-content {
@@ -191,6 +218,7 @@
 
             h1 {
                 font-size: 33px;
+                margin-top: 73px;
             }
 
             p {
