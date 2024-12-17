@@ -41,7 +41,7 @@
 
         .footer-icons {
             display: flex;
-            gap: 15px;
+            gap: 37px;
             padding-right: 35px;
 
             a {
@@ -50,9 +50,9 @@
                 height: 24px;
 
                 img {
-                    width: 100%;
+                    width: 30px;
                     height: auto;
-                    filter: invert(100%); // Weißer Icon-Effekt
+                
                     transition: transform 0.3s ease;
 
                     &:hover {
