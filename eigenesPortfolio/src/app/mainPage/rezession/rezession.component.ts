@@ -18,7 +18,7 @@ export class RezessionComponent {
       quote: "Michael really kept the team together with his great organization and clear communication.",
       author: "V. Schuster",
       position: "Team Partner",
-      profileImage: "assets/images/profile1.png"
+      profileImage: "assets/images/kopf.png"
     },
     {
       quote: "A great leader with excellent communication skills.",
