@@ -1,52 +1,26 @@
 <section class="portfolio-section">
+
     <div class="portfolio-header">
-        <h2>Portfolio</h2>
-        <p>
-            Explore a selection of my work here – interact with projects to see my skills in action.
-        </p>
+      <h2>Portfolio</h2>
+      <p>
+        Explore a selection of my work here – interact with projects to see my skills in action.
+      </p>
     </div>
+  
+    
     <div class="portfolio-grid">
-        <div class="portfolio-card">
-            <img src="./portfolio\join.png" alt=>
-            <div class="portfolio-details">
-                <h3>Join</h3>
-                <p class="technologies">Angular | TypeScript | HTML | CSS | Firebase</p>
-                <p class="description">
-                    Task manager inspired by the Kanban System. Create and organize tasks using drag-and-drop functions, assign users and categories.
-                </p>
-                <div class="buttons">
-                    <a href="#" class="btn live-test">Live test</a>
-                    <a href="#" class="btn github">GitHub</a>
-                </div>
-            </div>
+      <div class="portfolio-card" *ngFor="let card of portfolioCards">
+        <img [src]="card.image" [alt]="card.title" />
+        <div class="portfolio-details">
+          <h3>{{ card.title }}</h3>
+          <p class="technologies">{{ card.technologies }}</p>
+          <p class="description">{{ card.description }}</p>
+          <div class="buttons">
+            <a [href]="card.liveLink" class="btn live-test" target="_blank">Live test</a>
+            <a [href]="card.githubLink" class="btn github" target="_blank">GitHub</a>
+          </div>
         </div>
-        <div class="portfolio-card">
-            <img src="./portfolio\Sharkie.png" alt="El Pollo Loco">
-            <div class="portfolio-details">
-                <h3>Sharkie</h3>
-                <p class="technologies">JavaScript | HTML | CSS</p>
-                <p class="description">
-                    A simple Jump-and-Run game based on an object-oriented approach. Help Sharkie find coins and poison bottles to fight against the killer whale.
-                </p>
-                <div class="buttons">
-                    <a href="#" class="btn live-test">Live test</a>
-                    <a href="#" class="btn github">GitHub</a>
-                </div>
-            </div>
-        </div>
-        <div class="portfolio-card">
-            <img src="./portfolio\SimpleCRM.png" alt="Simple CRM">
-            <div class="portfolio-details">
-                <h3>Simple CRM</h3>
-                <p class="technologies">Angular | Firebase</p>
-                <p class="description">
-                    A very simple Customer Relationship Management system working with CRUD functionality.
-                </p>
-                <div class="buttons">
-                    <a href="#" class="btn live-test">Live test</a>
-                    <a href="#" class="btn github">GitHub</a>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
-</section>
+  </section>
+  
