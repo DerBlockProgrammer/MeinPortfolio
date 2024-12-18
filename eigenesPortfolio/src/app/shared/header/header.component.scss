@@ -8,6 +8,9 @@ body {
 
 /* Header-Styling */
 .header {
+  position: sticky; // Sticky Positionierung
+  top: 0; // Fixiert den Header oben am Bildschirm
+  z-index: 10000; // Header bleibt vor anderen Elementen sichtbar
   display: flex;
   justify-content: space-between;
   align-items: center;

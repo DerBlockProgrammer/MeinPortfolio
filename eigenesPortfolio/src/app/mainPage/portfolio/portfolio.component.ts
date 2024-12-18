@@ -30,19 +30,19 @@ export class PortfolioComponent {
     },
     {
       image: 'portfolio/Sharkie.png',
-      title: 'Sharkie',
+      title: 'El Pollo Loco',
       technologies: 'JavaScript | HTML | CSS',
       description:
-        'A simple Jump-and-Run game based on an object-oriented approach. Help Sharkie find coins and poison bottles to fight against the killer whale.',
+        'A simple Jump-and-Run game based on an object-oriented approach. Help Pepe find coins and help to fight against the killer chicken.',
       liveLink: '#',
       githubLink: '#',
     },
     {
-      image: 'portfolio/SimpleCRM.png',
-      title: 'Simple CRM',
-      technologies: 'Angular | Firebase',
+      image: 'portfolio/pokedex.png',
+      title: 'PokeDex',
+      technologies: 'Angular | Javascript',
       description:
-        'A very simple Customer Relationship Management system working with CRUD functionality.',
+        'My Pokédex program allows users to search for and view detailed information about various Pokémon, including their names, types, abilities, and stats, providing an interactive and organized way to explore the Pokémon world.',
       liveLink: '#',
       githubLink: '#',
     },

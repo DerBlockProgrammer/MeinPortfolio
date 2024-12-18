@@ -15,14 +15,14 @@ interface Testimonial {
 export class RezessionComponent {
   testimonials: Testimonial[] = [
     {
-      quote: "Michael really kept the team together with his great organization and clear communication.",
-      author: "V. Schuster",
+      quote: "Ich hatte das Glück, mit Marc in einer Gruppe zu arbeiten, und obwohl ich selbst noch Anfänger bin, hat er mir unglaublich viel geholfen. Marc ist nicht nur technisch fit, sondern auch super geduldig und erklärt alles verständlich. Egal, ob es um HTML, CSS oder JavaScript ging – er hat mir die Konzepte Schritt für Schritt gezeigt, sodass ich wirklich mitlernen konnte.",
+      author: "G. Mali",
       position: "Team Partner",
-      profileImage: "assets/images/kopf.png"
+      profileImage: "public/kopf.png"
     },
     {
-      quote: "A great leader with excellent communication skills.",
-      author: "A. Müller",
+      quote: "Für jemanden, der noch in der Aufbauphase seiner Karriere steht, bringt Marc bereits viele Best Practices mit und beweist echtes Potenzial. Mit seinem Fokus auf sauberen Code und seinem Interesse, Neues zu lernen, wird er in kurzer Zeit ein noch höheres Level erreichen. Die Zusammenarbeit war produktiv, kollegial und hat Spaß gemacht – definitiv jemand, mit dem man gerne Projekte angeht! 🚀",
+      author: "A. Krupnik",
       position: "Senior Developer",
       profileImage: "assets/images/profile2.png"
     },
