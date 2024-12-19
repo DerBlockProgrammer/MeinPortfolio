@@ -21,7 +21,7 @@ export class ContactComponent {
   mailTest = false;
 
   post = {
-    endPoint: 'http://localhost:4200/sendMail.php',
+    endPoint: 'https://marcvossler.de/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
