@@ -52,7 +52,7 @@ $checkbox-link-color: #9b59b6;
                 flex-direction: column;
                 gap: 20px;
 
-                input,
+                input [type=text],[type=email], 
                 textarea {
                     padding: 10px;
                     border: 1px solid $primary-color;

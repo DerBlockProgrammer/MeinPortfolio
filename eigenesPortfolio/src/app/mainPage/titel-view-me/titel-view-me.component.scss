@@ -1,3 +1,15 @@
+.shape{
+    margin-top: 459px;
+    width: 100%;
+    z-index: 2000;
+    position: absolute;
+    height: 253px;
+}
+
+
+
+
+
 section {
     position: relative;
     // background-color: #141D2F;
@@ -314,6 +326,7 @@ section {
             align-items: center;
             text-align: start;
             margin-top: -102px;
+            z-index: 5000;
 
             .iam-and-name {
                 flex-direction: row;
@@ -420,7 +433,7 @@ section {
             }
 
             .buttonDiv {
-                margin-top: -23px;
+                margin-top: -33px;
                 display: flex;
                 justify-content: center;
 
@@ -515,7 +528,7 @@ section {
         align-items: center;
         text-align: start;
         color: white;
-        background-image: url("./../../../../public/HeroBackground.png");
+        // background-image: url("./../../../../public/HeroBackground.png");
         background-size: cover;
         background-position: 0 -23px;
 
@@ -663,7 +676,7 @@ section {
         align-items: center;
         text-align: start;
         color: white;
-        background-image: url("./../../../../public/HeroBackground.png");
+        // background-image: url("./../../../../public/HeroBackground.png");
         background-size: cover;
         background-position: 0 -23px;
     }
