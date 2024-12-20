@@ -1,30 +1,22 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
-import { CommonModule } from '@angular/common'; // Importiere das CommonModule
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [FormsModule, CommonModule], // Füge CommonModule hinzu
+  imports: [FormsModule, CommonModule],
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss']
 })
-
-// @Component({
-//   selector: 'app-contact',
-//   imports: [FormsModule],
-//   templateUrl: './contact.component.html',
-//   styleUrl: './contact.component.scss'
-// })
 export class ContactComponent {
-
   http = inject(HttpClient);
 
   contactData = {
-    name:"",
-    email:"",
-    message:"",
+    name: "",
+    email: "",
+    message: "",
   };
 
   mailTest = false;
@@ -40,24 +32,35 @@ export class ContactComponent {
     },
   };
 
-  onSubmit(ngForm: NgForm) {
-    if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
-      this.http.post(this.post.endPoint, this.post.body(this.contactData))
-        .subscribe({
-          next: (response) => {
-
-            ngForm.resetForm();
-          },
-          error: (error) => {
-            console.error(error);
-          },
-          complete: () => console.info('send post complete'),
-        });
-    } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-
-      console.log("mail gesendet");
-
-      ngForm.resetForm();
+  /**
+   * Verarbeitet das Formular und sendet die Daten, falls sie gültig sind.
+   * @param ngForm - Die Angular Formulardaten.
+   */
+  onSubmit(ngForm: NgForm): void {
+    if (ngForm.form.valid) {
+      this.mailTest ? this.simulateMailSend(ngForm) : this.sendMail(ngForm);
     }
+  }
+
+  /**
+   * Simuliert das Versenden einer E-Mail, wenn `mailTest` aktiv ist.
+   * @param ngForm - Die Angular Formulardaten.
+   */
+  private simulateMailSend(ngForm: NgForm): void {
+    console.log("Mail gesendet (Simuliert):", this.contactData);
+    ngForm.resetForm();
+  }
+
+  /**
+   * Sendet die E-Mail-Daten an den angegebenen Endpunkt.
+   * @param ngForm 
+   */
+  private sendMail(ngForm: NgForm): void {
+    this.http.post(this.post.endPoint, this.post.body(this.contactData), this.post.options)
+      .subscribe({
+        next: () => ngForm.resetForm(),
+        error: (error) => console.error("Fehler beim Senden der Mail:", error),
+        complete: () => console.info('E-Mail erfolgreich gesendet'),
+      });
   }
 }

@@ -111,35 +111,29 @@ $checkbox-link-color: #9b59b6;
         resize: none;
     }
 
-  .checkbox {
-  display: flex;
-  align-items: center; /* Zentriert die Checkbox vertikal */
-  gap: 10px; /* Abstand zwischen Checkbox und Label */
-  font-size: 14px; /* Angemessene Schriftgröße */
-  line-height: 1.6; /* Lesbarkeit verbessern */
-  text-align: left; /* Text links ausrichten */
-  width: 100%; /* Verhindert, dass es sich zu klein anfühlt */
+    .checkbox {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        font-size: 14px;
+        line-height: 1.4;
 
-  input {
-    margin: 0;
-    align-self: flex-start; /* Checkbox bleibt links */
-  }
+        input {
+            margin: 0;
+            align-self: center;
 
-  label {
-    margin: 0;
-    display: block; /* Sicherstellen, dass der Text als Block behandelt wird */
-    word-wrap: break-word; /* Lange Wörter umbrechen */
-    width: calc(100% - 25px); /* Text nimmt den verfügbaren Platz ein */
+        }
 
-    a {
-      color: $checkbox-link-color; /* Farbe für den Link */
-      text-decoration: none;
-      &:hover {
-        text-decoration: underline; /* Text unterstreichen beim Hover */
-      }
+        label {
+            margin: 0;
+
+            a {
+                color: $checkbox-link-color;
+                text-decoration: none;
+            }
+        }
     }
-  }
-}
+
 
     button {
         display: block;
@@ -939,7 +933,9 @@ $checkbox-link-color: #9b59b6;
 
                         &:active {
                             transform: translateY(1px);
+                            /* Leichtes Drücken beim Klicken */
                             box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+                            /* Schwächerer Schatten */
                         }
                     }
 
