@@ -1,13 +1,22 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
+import { CommonModule } from '@angular/common'; // Importiere das CommonModule
 
 @Component({
   selector: 'app-contact',
-  imports: [FormsModule],
+  standalone: true,
+  imports: [FormsModule, CommonModule], // Füge CommonModule hinzu
   templateUrl: './contact.component.html',
-  styleUrl: './contact.component.scss'
+  styleUrls: ['./contact.component.scss']
 })
+
+// @Component({
+//   selector: 'app-contact',
+//   imports: [FormsModule],
+//   templateUrl: './contact.component.html',
+//   styleUrl: './contact.component.scss'
+// })
 export class ContactComponent {
 
   http = inject(HttpClient);
