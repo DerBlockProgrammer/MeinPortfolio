@@ -19,10 +19,10 @@ export class ContactComponent {
     message: "",
   };
 
-  mailTest = false;
+  mailTest = true;
 
   post = {
-    endPoint: 'https://marcvossler.de/sendMail.php',
+    endPoint: 'https://marc-vossler.de/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
