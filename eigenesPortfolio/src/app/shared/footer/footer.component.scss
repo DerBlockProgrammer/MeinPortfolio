@@ -13,20 +13,56 @@
         max-width: 1500px;
         width: 100%;
 
-        .footer-logo .logo img   {
-            height: 87px; 
-            width: auto; 
-            object-fit: contain; 
-            margin-bottom: 10px; 
+        .footer-logo .logo img {
+            height: 87px;
+            width: auto;
+            object-fit: contain;
+            margin-bottom: 10px;
+            cursor: pointer;
+            /* Zeigt Hand-Cursor an */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
 
-           
+            &:hover {
+                transform: scale(1.1);
+            }
+
+            >p{
+                font-size: 10px;
+            }
+         
         }
-        
+
 
         .footer-copyright {
             font-size: 12px;
             text-align: center;
             color: #b6b6b6;
+
+            .impressum {}
+
+            >p {
+                font-size: 16px;
+            }
+
+            .impressum:hover {
+                cursor: pointer;
+                color: #7dff63;
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+
+            .data {
+                display: flex;
+                gap: 14px;
+            }
+
+            .Policy {
+                
+            }
+            .Policy:hover {
+                cursor: pointer;
+                color: #7dff63;
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
         }
 
         .footer-icons {
@@ -42,7 +78,7 @@
                 img {
                     width: 30px;
                     height: auto;
-                
+
                     transition: transform 0.3s ease;
 
                     &:hover {
@@ -62,58 +98,58 @@
         display: flex;
         justify-content: center;
         height: 123px;
-    
+
         .footer-content {
             display: flex;
             justify-content: space-between;
             align-items: center;
             max-width: 1200px;
             width: 100%;
-    
+
             .footer-logo {
                 display: flex;
                 flex-direction: column;
-    
+
                 h1 {
                     font-size: 24px;
                     font-weight: bold;
-    
+
                     span {
                         color: #7dff63; // Grüne Farbe für "K"
                     }
                 }
-    
+
                 p {
                     margin: 5px 0 0;
                     font-size: 12px;
                     color: #b6b6b6;
                 }
             }
-    
+
             .footer-copyright {
                 font-size: 14px;
                 text-align: center;
                 color: #b6b6b6;
             }
-    
+
             .footer-icons {
                 display: flex;
                 gap: 15px;
                 padding-right: 0px;
-    
+
                 a {
                     display: inline-block;
                     width: 24px;
                     height: 24px;
-    
+
                     img {
                         width: 100%;
                         height: auto;
-              
+
                         transition: transform 0.3s ease;
-    
+
                         &:hover {
-                            transform: scale(1.2); 
+                            transform: scale(1.2);
                         }
                     }
                 }
@@ -173,7 +209,7 @@
                         /* Breite automatisch berechnen */
                         object-fit: contain;
                         /* Verhindert Verzerrungen */
-                      }
+                    }
                 }
             }
 

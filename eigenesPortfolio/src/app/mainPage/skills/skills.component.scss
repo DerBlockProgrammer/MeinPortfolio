@@ -6,6 +6,7 @@
     color: white;
     height: auto;
     width: 98%;
+    margin-top: 83px;
 
     .skills-grid {
         display: grid;
@@ -50,6 +51,7 @@
             font-size: 70px;
             font-weight: bold;
             margin-bottom: 20px;
+            margin-top: -25px;
         }
 
         p {
@@ -231,6 +233,7 @@
             max-width: 92%; // Beschränkt die Breite der Schrift
             text-align: right; // Text rechtsbündig
             margin: 0 auto 20px 0; // Zentriert nach rechts ohne Overflow
+            width: 100%;
 
             h2 {
                 font-size: 48px;
@@ -239,7 +242,7 @@
             }
 
             p {
-                font-size: 19px;
+                font-size: 14px;
                 line-height: 1.4;
                 margin: 5px 0; // Gleichmäßiger Abstand zwischen Zeilen
 
@@ -254,10 +257,14 @@
         }
 
         .skills-grid2 {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr); // Icons in 3 Spalten
-            gap: 0px;
-            margin-top: 20px;
+            display: grid
+            ;
+                    grid-template-columns: repeat(3, 1fr);
+                    gap: 0px;
+                    margin-top: 20px;
+                    position: relative;
+            
+                
 
             .skill {
                 display: flex;
