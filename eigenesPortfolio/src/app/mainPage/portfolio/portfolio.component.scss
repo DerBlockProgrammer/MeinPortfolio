@@ -77,7 +77,7 @@
                     .btn {
                         text-decoration: none;
                         font-size: 1rem;
-                        padding: 10px 20px;
+                        padding: 10px 15px;
                         border-radius: 5px;
                         transition: background-color 0.3s;
 
@@ -98,11 +98,14 @@
                         &.github {
                             background-color: transparent;
                             color: #00FF00;
-                        }
-
-                        &:hover {
-                            filter: brightness(0.9);
-
+                            border: 1px solid #70e61c;
+                            transition: background-color 0.3s, color 0.3s;
+                        
+                            &:hover {
+                                background-color: #70e61c; /* Hintergrund wird grün */
+                                color: #ffffff; /* Textfarbe ändern */
+                                border-color: #00FF00; /* Rand leicht anpassen */
+                            }
                         }
                     }
                 }
@@ -112,10 +115,10 @@
 
         .portfolio-card:nth-child(2) {
             flex-direction: row-reverse;
-            text-align: right;
+            padding-left: 135px;
+          
 
             img {
-                margin-right: -84px;
                 margin-left: 20px;
             }
         }
@@ -235,11 +238,19 @@
             }
 
             .portfolio-card:nth-child(2) {
-                flex-direction: column; // Zweite Karte wird ebenfalls vertikal ausgerichtet
-                text-align: center;
+                display: flex
+                ;
+                        flex-direction: column;
+                        align-items: center;
+                        text-align: center;
+                        gap: 20px;
+                        padding: 15px;
 
                 img {
-                    margin: 0; // Margin entfernen
+                    margin: 0 auto;
+                    width: 31%;
+                    max-width: 300px;
+                    height: auto;
                 }
             }
         }
@@ -320,6 +331,7 @@
                     height: auto;
                     margin: 0 auto;
                     /* Zentriert */
+                    margin-top: 43px;
                 }
 
                 .portfolio-details {
@@ -374,13 +386,19 @@
             }
 
             .portfolio-card:nth-child(2) {
-                flex-direction: column;
-                /* Bild und Details vertikal */
-                text-align: center;
+                display: flex
+                ;
+                        flex-direction: column;
+                        align-items: center;
+                        text-align: center;
+                        gap: 20px;
+                        padding: 15px;
 
                 img {
                     margin: 0 auto;
-                    /* Zentriert */
+                    width: 31%;
+                    max-width: 300px;
+                    height: auto;
                 }
             }
         }
@@ -462,6 +480,7 @@
                     height: auto;
                     margin: 0 auto;
                     /* Zentriert */
+                    margin-top: 43px;
                 }
 
                 .portfolio-details {
@@ -515,13 +534,19 @@
             }
 
             .portfolio-card:nth-child(2) {
-                flex-direction: column;
-                /* Bild und Details vertikal */
-                text-align: center;
+                display: flex
+                ;
+                        flex-direction: column;
+                        align-items: center;
+                        text-align: center;
+                        gap: 20px;
+                        padding: 15px;
 
                 img {
                     margin: 0 auto;
-                    /* Zentriert */
+                    width: 31%;
+                    max-width: 300px;
+                    height: auto;
                 }
             }
         }
@@ -536,9 +561,10 @@
         text-align: center;
 
         .portfolio-header {
+          
             position: relative;
             /* Grundlage für Hintergrund */
-            background-image: url("../../../../public/background/lilavector.png");
+          
             /* Pfad zum Bild */
             background-size: cover;
             /* Sorgt dafür, dass der Hintergrund das Element abdeckt */
@@ -614,6 +640,7 @@
                     height: auto;
                     margin: 0 auto;
                     /* Zentriert */
+                    margin-top: 43px;
                 }
 
                 .portfolio-details {
@@ -639,6 +666,8 @@
                         display: flex;
                         // flex-direction: column; /* Buttons untereinander */
                         // gap: 10px; /* Abstand zwischen Buttons */
+                        padding-right: 9px;
+                        width: 70%;
 
                         .btn {
                             font-size: 14px;
@@ -670,10 +699,14 @@
                 flex-direction: column;
                 /* Bild und Details vertikal */
                 text-align: center;
+                display: contents;
 
                 img {
                     margin: 0 auto;
-                    /* Zentriert */
+                    margin: 0 auto;
+                    width: 62%;
+                    max-width: 300px;
+                    height: auto;
                 }
             }
         }
