@@ -84,6 +84,10 @@
                         &.live-test {
                             background-color: #9747FF;
                             color: white;
+                            width: 79px;
+                            display: flex
+                        ;
+                            justify-content: center;
                         }
 
                         &.live-test:hover {
@@ -213,6 +217,7 @@
                             &.live-test {
                                 background-color: #9747FF;
                                 color: white;
+                                width: 80%;
                             }
 
                             &.github {
@@ -354,6 +359,7 @@
                             &.live-test {
                                 background-color: #9747FF;
                                 color: white;
+                                width: 100%;
                             }
 
                             &.github {
